@@ -44,7 +44,7 @@ async function pageHome(){
         Tu pourras explorer différents thèmes, suivre les cours associés<br>
         et tester tes connaissances grâce à des QCM détaillés avec explications.
       </p>
-      <a href="themes.html" class="btn">Commencer</a>
+      <a href="themes.html" class="btn">🚒 Commencer</a>
     </div>
   `;
 }
@@ -77,7 +77,6 @@ async function pageCourses(){
       <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
         <div>
           <div style="font-weight:800">${c.title}</div>
-          <div class="muted">${c.description||""}</div>
         </div>
         <a class="btn secondary" href="chapters.html?course=${c.id}">Voir chapitres</a>
       </div>
@@ -150,10 +149,14 @@ async function pageQuiz(){
 
   document.getElementById("quizForm").onsubmit = (e)=>{
     e.preventDefault();
+    let score = 0;
+
     questions.forEach(q=>{
       const selected = [...document.querySelectorAll(`input[name=q${q.id}]:checked`)].map(el=>parseInt(el.value));
       const correctIds = Data.choicesByQuestion(q.id).filter(c=>c.is_correct).map(c=>c.id);
       const ok = JSON.stringify(selected.sort())===JSON.stringify(correctIds.sort());
+
+      if(ok) score++; // ✅ Comptabilise la bonne réponse
 
       const feedback = document.querySelector(`#q${q.id} .feedback`);
       feedback.innerHTML = ok
@@ -168,7 +171,27 @@ async function pageQuiz(){
       });
     });
 
-    const btn = e.target.querySelector("button");
+    // --- Calcul note ---
+    const total = questions.length;
+    const note20 = Math.round((score / total) * 20);
+
+    // --- Supprime ancien résultat s’il existe ---
+    const oldResult = document.getElementById("finalResult");
+    if(oldResult) oldResult.remove();
+
+    // --- Ajoute le résultat final ---
+    const resultDiv = document.createElement("div");
+    resultDiv.className = "card";
+    resultDiv.id = "finalResult";
+    resultDiv.innerHTML = `
+      <h3>Résultat final</h3>
+      <p>Tu as obtenu <strong>${score}/${total}</strong> bonnes réponses</p>
+      <p>Note : <strong>${note20}/20</strong></p>
+    `;
+    document.getElementById("quizForm").appendChild(resultDiv);
+
+    // --- Remplacer bouton ---
+    const btn = e.target.querySelector("button[type=submit]");
     btn.textContent = "Retour au chapitre";
     btn.type = "button";
     btn.onclick = () => {
