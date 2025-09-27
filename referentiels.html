@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thèmes - QCM Pompier</title>
+  <title>Référentiels - QCM Pompier</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
-<body data-page="themes">
+<body>
   <header>
     <h1><span class="red">QCM</span> Pompier</h1>
     <nav>
@@ -15,7 +15,7 @@
       </div>
       <ul class="nav-links">
         <li><a href="index.html">Accueil</a></li>
-        <li><a href="themes.html" class="active">Thèmes</a></li>
+        <li><a href="themes.html">Thèmes</a></li>
         <li><a href="referentiels.html" class="active">Référentiels</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
@@ -28,12 +28,20 @@
     </nav>
   </header>
 
-  <main id="content" class="container"></main>
+  <main class="container" style="text-align:center; padding:4rem 2rem;">
+    <h2 style="color:#b22222;">Référentiels</h2>
+    <p style="margin-top:1rem; font-size:1.1rem;">
+      Cette page est en construction.<br>
+      Elle présentera prochainement l’ensemble des référentiels disponibles.
+    </p>
+  </main>
 
   <footer>
     <p>&copy; 2025 QCM Pompier - Tous droits réservés</p>
   </footer>
 
-  <script src="assets/app.js"></script>
+  <script>
+    function toggleMenu(){document.getElementById("mobileMenu").classList.toggle("show");}
+  </script>
 </body>
 </html>

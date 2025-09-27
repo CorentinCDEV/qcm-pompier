@@ -1,200 +1,21 @@
 {
   "themes": [
-    { "id": 1, "title": "Incendie", "icon": "🔥" },
-    { "id": 2, "title": "SAP", "icon": "⛑️" }
+    { "id": 1, "title": "Guide de doctrine opérationnelle (GDO)", "icon": "📘" },
+    { "id": 2, "title": "Guides de techniques opérationnelles (GTO)", "icon": "📗" },
+    { "id": 3, "title": "Le secours et soins d'urgence aux personnes (SSUAP)", "icon": "⛑️" }
   ],
   "courses": [
-    { "id": 12, "theme_id": 1, "title": "GDO - Incendie de structure"},
-    { "id": 21, "theme_id": 2, "title": "GDO - Secours à personne"}
+    { "id": 101, "theme_id": 1, "title": "GDO - Incendies de structures 2018 V2" },
+    { "id": 102, "theme_id": 1, "title": "GDO - Feux de forêts 1ère édition 2021" },
+
+    { "id": 201, "theme_id": 2, "title": "GTO - Établissements techniques extinction 2018" },
+    { "id": 202, "theme_id": 2, "title": "GTO - Sauvetages Mise En Sécurité V2" },
+    { "id": 203, "theme_id": 2, "title": "GTO - Sauvegarde Opérationnelle" },
+    { "id": 204, "theme_id": 2, "title": "GTO - Lutte Feux Forêts Espaces Naturels" },
+
+    { "id": 301, "theme_id": 3, "title": "PSE" }
   ],
-  "chapters": [
-    { "id": 1200, "course_id": 12, "title": "Chapitre 1 - Connaissance du risque incendie" },
-    { "id": 2100, "course_id": 21, "title": "Chapitre 1 - Bases du secours à personne" }
-  ],
-
-  "questions": [
-    { "id": 11, "chapter_id": 1200, "text": "Quels sont les trois éléments du triangle du feu ?", "explanation": "Le triangle du feu est constitué du combustible, du comburant et de l’énergie d’activation. La suppression de l’un d’eux arrête la combustion." },
-    { "id": 12, "chapter_id": 1200, "text": "Quelle est la définition d’un incendie selon le GDO ?", "explanation": "Un incendie est un feu dont le développement n’est pas maîtrisé. C’est une combustion qui se propage dans le temps et dans l’espace." },
-    { "id": 13, "chapter_id": 1200, "text": "Quel est le rôle du comburant dans la combustion ?", "explanation": "Le comburant, principalement l’oxygène de l’air, permet la réaction chimique d’oxydation qui entretient le feu." },
-    { "id": 14, "chapter_id": 1200, "text": "Comment se nomme la décomposition d’un solide sous l’action de la chaleur ?", "explanation": "La pyrolyse est la décomposition d’un solide par la chaleur, produisant des gaz combustibles qui alimentent la flamme." },
-    { "id": 15, "chapter_id": 1200, "text": "Quel est le gaz comburant essentiel présent dans l’air ?", "explanation": "L’oxygène (O₂), présent à environ 21 % dans l’air, est le principal comburant de la combustion." },
-    { "id": 16, "chapter_id": 1200, "text": "Quel type de transfert de chaleur se produit par contact direct ?", "explanation": "La conduction est le transfert d’énergie thermique par contact direct à travers un matériau solide." },
-    { "id": 17, "chapter_id": 1200, "text": "Quel type de transfert de chaleur se produit par mouvement de gaz chauds ?", "explanation": "La convection est le transfert de chaleur dû aux mouvements d’air et de gaz chauds." },
-    { "id": 18, "chapter_id": 1200, "text": "Quel mode de transfert ne nécessite pas de support matériel ?", "explanation": "Le rayonnement est un transfert d’énergie par ondes électromagnétiques, sans contact ni support." },
-    { "id": 19, "chapter_id": 1200, "text": "Comment se nomme la température minimale d’émission de vapeurs inflammables d’un liquide ?", "explanation": "Le point éclair est la température minimale à laquelle un liquide émet assez de vapeurs pour former un mélange inflammable." },
-    { "id": 20, "chapter_id": 1200, "text": "Quelle est la conséquence d’une combustion incomplète ?", "explanation": "Une combustion incomplète produit des fumées épaisses et toxiques, notamment du monoxyde de carbone." },
-    { "id": 21, "chapter_id": 1200, "text": "Quelle est la phase initiale d’un incendie ?", "explanation": "La phase d’ignition est le moment où un foyer de combustion se forme après l’apport d’énergie d’activation." },
-    { "id": 22, "chapter_id": 1200, "text": "Que désigne le terme 'flashover' ?", "explanation": "Le flashover est l’embrasement généralisé éclair, caractérisé par l’inflammation quasi simultanée des combustibles d’un local." },
-    { "id": 23, "chapter_id": 1200, "text": "Que désigne le terme 'backdraft' ?", "explanation": "Le backdraft est une explosion de fumées qui survient lorsqu’un local saturé de gaz combustibles reçoit soudainement de l’air." },
-    { "id": 24, "chapter_id": 1200, "text": "Que signifie FGI ?", "explanation": "La FGI est la 'Flamme de Gaz Imbrûlés', un phénomène d’inflammation des gaz imbrûlés à la sortie d’un local." },
-    { "id": 25, "chapter_id": 1200, "text": "Quel indicateur peut annoncer un flashover ?", "explanation": "Le roulis de flammes au plafond, appelé tongues of fire, annonce la proximité d’un flashover." },
-    { "id": 26, "chapter_id": 1200, "text": "Quel phénomène correspond à une inflammation des gaz chauds en plafond ?", "explanation": "Le flame over est une inflammation localisée des gaz chauds accumulés en plafond." },
-    { "id": 27, "chapter_id": 1200, "text": "Quels sont les produits de la combustion complète ?", "explanation": "La combustion complète produit principalement du dioxyde de carbone (CO₂), de l’eau (H₂O) et de la chaleur." },
-    { "id": 28, "chapter_id": 1200, "text": "Quels sont les principaux risques liés aux fumées ?", "explanation": "Les fumées réduisent la visibilité, transportent de la chaleur et contiennent des gaz toxiques dangereux pour les occupants et intervenants." },
-    { "id": 29, "chapter_id": 1200, "text": "Quel facteur conditionne la propagation verticale des fumées ?", "explanation": "La convection entraîne la montée des fumées chaudes vers le plafond, favorisant leur propagation verticale." },
-    { "id": 30, "chapter_id": 1200, "text": "Quel est le rôle du modèle de Thomas ?", "explanation": "Le modèle de Thomas explique la propagation de l’incendie par transfert simultané de chaleur et de masse." },
-    { "id": 31, "chapter_id": 1200, "text": "Quelle est la définition du pouvoir calorifique d’un combustible ?", "explanation": "Le pouvoir calorifique est la quantité de chaleur dégagée par la combustion complète d’une unité de combustible." },
-    { "id": 32, "chapter_id": 1200, "text": "Quel est le risque principal du monoxyde de carbone ?", "explanation": "Le monoxyde de carbone est un gaz toxique, incolore et inodore, qui empêche le transport de l’oxygène dans le sang." },
-    { "id": 33, "chapter_id": 1200, "text": "Quel est l’effet d’une ventilation incontrôlée ?", "explanation": "Une ventilation incontrôlée peut provoquer un apport massif d’oxygène, intensifiant la combustion et augmentant le risque d’explosion." },
-    { "id": 34, "chapter_id": 1200, "text": "Quel est le rôle des gaz imbrûlés dans un incendie ?", "explanation": "Les gaz imbrûlés sont combustibles et peuvent s’enflammer violemment en cas d’apport d’air, générant un phénomène thermique dangereux." },
-    { "id": 35, "chapter_id": 1200, "text": "Quelle est la conséquence du rayonnement thermique sur les structures ?", "explanation": "Le rayonnement thermique peut chauffer des matériaux éloignés du foyer, favorisant leur inflammation et la propagation de l’incendie." },
-    { "id": 36, "chapter_id": 1200, "text": "Quel est le rôle des parois dans la propagation par conduction ?", "explanation": "Les parois chauffées transmettent l’énergie par conduction et peuvent enflammer les pièces voisines." },
-    { "id": 37, "chapter_id": 1200, "text": "Quelle est la particularité des fumées par rapport aux flammes ?", "explanation": "Les fumées précèdent souvent les flammes, transportent de l’énergie thermique et représentent un danger invisible." },
-    { "id": 38, "chapter_id": 1200, "text": "Quelle est la principale source d’énergie des incendies de structure ?", "explanation": "Les combustibles solides présents dans le bâtiment, comme le bois et les matériaux de construction, sont la principale source d’énergie." },
-    { "id": 39, "chapter_id": 1200, "text": "Quelle est la définition du phénomène de propagation ?", "explanation": "La propagation est la transmission du feu d’une zone à une autre par conduction, convection ou rayonnement." },
-    { "id": 40, "chapter_id": 1200, "text": "Quelle stratégie d’extinction repose sur la rupture du triangle du feu ?", "explanation": "Rompre le triangle du feu consiste à supprimer le combustible, le comburant ou la chaleur afin de stopper la combustion." }
-  ],
-
-
-  "choices": [
-    { "id": 141, "question_id": 11, "text": "Combustible, comburant et chaleur", "is_correct": true },
-    { "id": 142, "question_id": 11, "text": "Combustible, chaleur et humidité", "is_correct": false },
-    { "id": 143, "question_id": 11, "text": "Oxygène, fumées et chaleur", "is_correct": false },
-    { "id": 144, "question_id": 11, "text": "Combustible, fumées et énergie mécanique", "is_correct": false },
-
-    { "id": 145, "question_id": 12, "text": "Un feu volontairement entretenu", "is_correct": false },
-    { "id": 146, "question_id": 12, "text": "Un foyer de combustion limité", "is_correct": false },
-    { "id": 147, "question_id": 12, "text": "Un feu dont le développement n’est pas maîtrisé", "is_correct": true },
-    { "id": 148, "question_id": 12, "text": "Une réaction chimique lente", "is_correct": false },
-
-    { "id": 149, "question_id": 13, "text": "Apporter l’énergie d’activation", "is_correct": false },
-    { "id": 150, "question_id": 13, "text": "Permettre la réaction d’oxydation", "is_correct": true },
-    { "id": 151, "question_id": 13, "text": "Refroidir les fumées", "is_correct": false },
-    { "id": 152, "question_id": 13, "text": "Produire le combustible", "is_correct": false },
-
-    { "id": 153, "question_id": 14, "text": "Pyrolyse", "is_correct": true },
-    { "id": 154, "question_id": 14, "text": "Vaporisation", "is_correct": false },
-    { "id": 155, "question_id": 14, "text": "Condensation", "is_correct": false },
-    { "id": 156, "question_id": 14, "text": "Sublimation", "is_correct": false },
-
-    { "id": 157, "question_id": 15, "text": "Azote (N₂)", "is_correct": false },
-    { "id": 158, "question_id": 15, "text": "Oxygène (O₂)", "is_correct": true },
-    { "id": 159, "question_id": 15, "text": "Dioxyde de carbone (CO₂)", "is_correct": false },
-    { "id": 160, "question_id": 15, "text": "Hydrogène (H₂)", "is_correct": false },
-
-    { "id": 161, "question_id": 16, "text": "Conduction", "is_correct": true },
-    { "id": 162, "question_id": 16, "text": "Convection", "is_correct": false },
-    { "id": 163, "question_id": 16, "text": "Rayonnement", "is_correct": false },
-    { "id": 164, "question_id": 16, "text": "Diffusion", "is_correct": false },
-
-    { "id": 165, "question_id": 17, "text": "Conduction", "is_correct": false },
-    { "id": 166, "question_id": 17, "text": "Convection", "is_correct": true },
-    { "id": 167, "question_id": 17, "text": "Rayonnement", "is_correct": false },
-    { "id": 168, "question_id": 17, "text": "Propagation mécanique", "is_correct": false },
-
-    { "id": 169, "question_id": 18, "text": "Conduction", "is_correct": false },
-    { "id": 170, "question_id": 18, "text": "Convection", "is_correct": false },
-    { "id": 171, "question_id": 18, "text": "Rayonnement", "is_correct": true },
-    { "id": 172, "question_id": 18, "text": "Évaporation", "is_correct": false },
-
-    { "id": 173, "question_id": 19, "text": "Point éclair", "is_correct": true },
-    { "id": 174, "question_id": 19, "text": "Température critique", "is_correct": false },
-    { "id": 175, "question_id": 19, "text": "Point de fusion", "is_correct": false },
-    { "id": 176, "question_id": 19, "text": "Seuil thermique", "is_correct": false },
-
-    { "id": 177, "question_id": 20, "text": "Production de vapeur d’eau", "is_correct": false },
-    { "id": 178, "question_id": 20, "text": "Monoxyde de carbone", "is_correct": true },
-    { "id": 179, "question_id": 20, "text": "Dioxygène pur", "is_correct": false },
-    { "id": 180, "question_id": 20, "text": "Énergie mécanique", "is_correct": false },
-
-    { "id": 181, "question_id": 21, "text": "Phase d’ignition", "is_correct": true },
-    { "id": 182, "question_id": 21, "text": "Phase de développement", "is_correct": false },
-    { "id": 183, "question_id": 21, "text": "Phase de déclin", "is_correct": false },
-    { "id": 184, "question_id": 21, "text": "Phase de stabilisation", "is_correct": false },
-
-    { "id": 185, "question_id": 22, "text": "Flashover", "is_correct": true },
-    { "id": 186, "question_id": 22, "text": "Backdraft", "is_correct": false },
-    { "id": 187, "question_id": 22, "text": "Flame over", "is_correct": false },
-    { "id": 188, "question_id": 22, "text": "Explosion de gaz", "is_correct": false },
-
-    { "id": 189, "question_id": 23, "text": "Explosion de fumées", "is_correct": true },
-    { "id": 190, "question_id": 23, "text": "Embrasement généralisé", "is_correct": false },
-    { "id": 191, "question_id": 23, "text": "Flamme de gaz imbrûlés", "is_correct": false },
-    { "id": 192, "question_id": 23, "text": "Propagation thermique", "is_correct": false },
-
-    { "id": 193, "question_id": 24, "text": "Flamme de gaz imbrûlés", "is_correct": true },
-    { "id": 194, "question_id": 24, "text": "Feu couvant", "is_correct": false },
-    { "id": 195, "question_id": 24, "text": "Combustion lente", "is_correct": false },
-    { "id": 196, "question_id": 24, "text": "Ventilation mécanique", "is_correct": false },
-
-    { "id": 197, "question_id": 25, "text": "Flammes roulantes au plafond", "is_correct": true },
-    { "id": 198, "question_id": 25, "text": "Épaississement des parois", "is_correct": false },
-    { "id": 199, "question_id": 25, "text": "Condensation des gaz", "is_correct": false },
-    { "id": 200, "question_id": 25, "text": "Évaporation de l’eau", "is_correct": false },
-
-    { "id": 201, "question_id": 26, "text": "Flame over", "is_correct": true },
-    { "id": 202, "question_id": 26, "text": "Backdraft", "is_correct": false },
-    { "id": 203, "question_id": 26, "text": "Flashover", "is_correct": false },
-    { "id": 204, "question_id": 26, "text": "Explosion de fumées", "is_correct": false },
-
-    { "id": 205, "question_id": 27, "text": "Dioxyde de carbone et eau", "is_correct": true },
-    { "id": 206, "question_id": 27, "text": "Oxygène et vapeur d’eau", "is_correct": false },
-    { "id": 207, "question_id": 27, "text": "Hydrogène et méthane", "is_correct": false },
-    { "id": 208, "question_id": 27, "text": "Monoxyde de carbone et azote", "is_correct": false },
-
-    { "id": 209, "question_id": 28, "text": "Réduction de visibilité", "is_correct": false },
-    { "id": 210, "question_id": 28, "text": "Transport de chaleur", "is_correct": false },
-    { "id": 211, "question_id": 28, "text": "Présence de gaz toxiques", "is_correct": false },
-    { "id": 212, "question_id": 28, "text": "Toutes ces réponses", "is_correct": true },
-
-    { "id": 213, "question_id": 29, "text": "Convection", "is_correct": true },
-    { "id": 214, "question_id": 29, "text": "Rayonnement", "is_correct": false },
-    { "id": 215, "question_id": 29, "text": "Conduction", "is_correct": false },
-    { "id": 216, "question_id": 29, "text": "Diffusion", "is_correct": false },
-
-    { "id": 217, "question_id": 30, "text": "Expliquer la propagation par chaleur et masse", "is_correct": true },
-    { "id": 218, "question_id": 30, "text": "Définir les fumées", "is_correct": false },
-    { "id": 219, "question_id": 30, "text": "Évaluer la température d’auto-inflammation", "is_correct": false },
-    { "id": 220, "question_id": 30, "text": "Mesurer l’humidité", "is_correct": false },
-
-    { "id": 221, "question_id": 31, "text": "Quantité de chaleur dégagée par la combustion d’une unité de combustible", "is_correct": true },
-    { "id": 222, "question_id": 31, "text": "Température maximale d’un feu", "is_correct": false },
-    { "id": 223, "question_id": 31, "text": "Volume de fumées produites", "is_correct": false },
-    { "id": 224, "question_id": 31, "text": "Durée de combustion", "is_correct": false },
-
-    { "id": 225, "question_id": 32, "text": "Gaz toxique incolore et inodore", "is_correct": true },
-    { "id": 226, "question_id": 32, "text": "Gaz inflammable coloré", "is_correct": false },
-    { "id": 227, "question_id": 32, "text": "Gaz de refroidissement", "is_correct": false },
-    { "id": 228, "question_id": 32, "text": "Gaz inerte", "is_correct": false },
-
-    { "id": 229, "question_id": 33, "text": "Augmenter l’apport en oxygène", "is_correct": true },
-    { "id": 230, "question_id": 33, "text": "Refroidir le foyer", "is_correct": false },
-    { "id": 231, "question_id": 33, "text": "Réduire les fumées", "is_correct": false },
-    { "id": 232, "question_id": 33, "text": "Bloquer la conduction", "is_correct": false },
-
-    { "id": 233, "question_id": 34, "text": "Ils peuvent s’enflammer violemment en cas d’apport d’air", "is_correct": true },
-    { "id": 234, "question_id": 34, "text": "Ils refroidissent le foyer", "is_correct": false },
-    { "id": 235, "question_id": 34, "text": "Ils réduisent la convection", "is_correct": false },
-    { "id": 236, "question_id": 34, "text": "Ils absorbent l’oxygène", "is_correct": false },
-
-    { "id": 237, "question_id": 35, "text": "Chauffer des matériaux éloignés", "is_correct": true },
-    { "id": 238, "question_id": 35, "text": "Refroidir le foyer", "is_correct": false },
-    { "id": 239, "question_id": 35, "text": "Éteindre les fumées", "is_correct": false },
-    { "id": 240, "question_id": 35, "text": "Dissoudre le combustible", "is_correct": false },
-
-    { "id": 241, "question_id": 36, "text": "Transmettre l’énergie aux pièces voisines", "is_correct": true },
-    { "id": 242, "question_id": 36, "text": "Arrêter la combustion", "is_correct": false },
-    { "id": 243, "question_id": 36, "text": "Créer de la convection", "is_correct": false },
-    { "id": 244, "question_id": 36, "text": "Neutraliser le comburant", "is_correct": false },
-
-    { "id": 245, "question_id": 37, "text": "Elles précèdent souvent les flammes et transportent de l’énergie", "is_correct": true },
-    { "id": 246, "question_id": 37, "text": "Elles éteignent le feu", "is_correct": false },
-    { "id": 247, "question_id": 37, "text": "Elles réduisent la température", "is_correct": false },
-    { "id": 248, "question_id": 37, "text": "Elles remplacent le comburant", "is_correct": false },
-
-    { "id": 249, "question_id": 38, "text": "Combustibles solides du bâtiment", "is_correct": true },
-    { "id": 250, "question_id": 38, "text": "Humidité de l’air", "is_correct": false },
-    { "id": 251, "question_id": 38, "text": "Froid extérieur", "is_correct": false },
-    { "id": 252, "question_id": 38, "text": "Conduction des parois métalliques", "is_correct": false },
-
-    { "id": 253, "question_id": 39, "text": "Transmission du feu d’une zone à une autre", "is_correct": true },
-    { "id": 254, "question_id": 39, "text": "Extinction rapide du feu", "is_correct": false },
-    { "id": 255, "question_id": 39, "text": "Diminution des fumées", "is_correct": false },
-    { "id": 256, "question_id": 39, "text": "Augmentation de l’humidité", "is_correct": false },
-
-    { "id": 257, "question_id": 40, "text": "Supprimer un élément du triangle du feu", "is_correct": true },
-    { "id": 258, "question_id": 40, "text": "Augmenter la convection", "is_correct": false },
-    { "id": 259, "question_id": 40, "text": "Favoriser les fumées", "is_correct": false },
-    { "id": 260, "question_id": 40, "text": "Refroidir uniquement l’air ambiant", "is_correct": false }
-  ]
+  "chapters": [],
+  "questions": [],
+  "choices": []
 }

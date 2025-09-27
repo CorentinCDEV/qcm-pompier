@@ -1,123 +1,87 @@
-/* --- Base --- */
+/* === RESET & BASE === */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
   font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  margin: 0;
-  color: #222;
-}
-
-.container {
-  width: 90%;
-  max-width: 800px;
-  margin: 20px auto;
-}
-
-/* --- Header --- */
-.header {
+  line-height: 1.6;
+  color: #333;
+  background: #fdfdfd;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 0;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.brand {
-  font-weight: bold;
-  font-size: 22px;
-}
+.container { width: 90%; max-width: 800px; margin: 20px auto; }
 
-.accent {
-  color: #e63946; /* Rouge pompier */
-}
-
-.nav a {
-  margin-left: 15px;
-  text-decoration: none;
-  color: #222;
-}
-
-.nav a:hover {
-  text-decoration: underline;
-}
-
-/* --- Cartes --- */
-.card {
+/* === HEADER === */
+header {
   background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 16px;
-  margin: 12px 0;
-  color: inherit;
-  text-decoration: none;
-  display: block;
+  color: #000;
+  padding: 1rem 2rem;
+  display: flex; justify-content: space-between; align-items: center;
+  border-bottom: 1px solid #ddd; position: relative;
 }
+header h1 { font-size: 1.5rem; }
+header h1 span.red { color: #b22222; font-weight: bold; }
 
-.grid {
-  display: grid;
-  gap: 16px;
+nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav a { color: #000; text-decoration: none; font-weight: bold; transition: color .3s; }
+nav a:hover { color: #b22222; }
+
+/* === Burger === */
+.burger { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
+.burger span { width: 25px; height: 3px; background: #000; }
+
+.nav-links { display: flex; }
+.nav-links.mobile {
+  display: none; flex-direction: column;
+  position: absolute; top: 60px; right: 20px;
+  background: #fff; border: 1px solid #ddd; padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+.nav-links.mobile li { margin: 0.5rem 0; }
+.nav-links.mobile.show { display: flex; }
 
-.cols-2 {
-  grid-template-columns: 1fr 1fr;
+/* === INTRO (Accueil) === */
+.intro { text-align: center; padding: 4rem 2rem; background: #fafafa; flex: 1; }
+.intro h2 { font-size: 2rem; margin-bottom: 1rem; color: #b22222; }
+.intro p { max-width: 700px; margin: 0 auto 2rem; font-size: 1.1rem; line-height: 1.8; }
+.intro p span { display: block; margin-bottom: 1rem; }
+
+.cta-btn, .btn {
+  background: #b22222; color: #fff; border: none;
+  padding: 12px 20px; font-size: 16px; border-radius: 6px;
+  cursor: pointer; transition: background .3s; text-decoration: none; display: inline-block;
 }
+.cta-btn:hover, .btn:hover { background: #8b1a1a; }
+.btn.secondary { background: #457b9d; }
+.btn.secondary:hover { background: #35607a; }
 
-/* --- Boutons --- */
-.btn {
-  display: inline-block;
-  padding: 12px 20px;      
-  font-size: 16px;         
-  background: #e63946;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  margin-top: 12px;
-  border: none;
-  cursor: pointer;
+/* === FOOTER === */
+footer {
+  background: #333; color: #fff; text-align: center;
+  padding: 1.5rem; font-size: .9rem; margin-top: auto;
 }
+footer a { color: #ffcccb; text-decoration: none; }
 
-.btn:hover {
-  background: #c53030;
+/* === CARTES & GRIDS === */
+.card {
+  background: #fff; border: 1px solid #ddd; border-radius: 6px;
+  padding: 16px; margin: 12px 0; color: inherit; text-decoration: none; display: block;
 }
+.grid { display: grid; gap: 16px; }
+.cols-2 { grid-template-columns: 1fr 1fr; }
 
-.btn.secondary {
-  background: #457b9d;
+/* === QCM === */
+.choice { display: block; margin: 6px 0; }
+.choice.correct { background: #d4edda; border-radius: 4px; padding: 3px; }
+.choice.incorrect { background: #f8d7da; border-radius: 4px; padding: 3px; }
+.feedback { margin-top: 6px; font-size: 14px; }
+.muted { color: #666; }
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .burger { display: flex; }
+  .btn, .cta-btn { padding: 14px 24px; font-size: 18px; }
 }
-
-.btn.secondary:hover {
-  background: #35607a;
-}
-
-/* --- Choix QCM --- */
-.choice {
-  display: block;
-  margin: 6px 0;
-}
-
-.choice.correct {
-  background: #d4edda;
-  border-radius: 4px;
-  padding: 3px;
-}
-
-.choice.incorrect {
-  background: #f8d7da;
-  border-radius: 4px;
-  padding: 3px;
-}
-
-/* --- Feedback --- */
-.feedback {
-  margin-top: 6px;
-  font-size: 14px;
-}
-
-.muted {
-  color: #666;
-}
-
-@media (max-width: 600px) {
-  .btn {
-    padding: 14px 24px;
-    font-size: 18px;
-  }
-}
-
