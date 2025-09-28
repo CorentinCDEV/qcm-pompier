@@ -7,15 +7,240 @@
   "courses": [
     { "id": 101, "theme_id": 1, "title": "GDO - Incendies de structures 2018 V2" },
     { "id": 102, "theme_id": 1, "title": "GDO - Feux de forêts 1ère édition 2021" },
-
     { "id": 201, "theme_id": 2, "title": "GTO - Établissements techniques extinction 2018" },
     { "id": 202, "theme_id": 2, "title": "GTO - Sauvetages Mise En Sécurité V2" },
     { "id": 203, "theme_id": 2, "title": "GTO - Sauvegarde Opérationnelle" },
     { "id": 204, "theme_id": 2, "title": "GTO - Lutte Feux Forêts Espaces Naturels" },
-
     { "id": 301, "theme_id": 3, "title": "PSE" }
   ],
-  "chapters": [],
-  "questions": [],
-  "choices": []
+  "chapters": [
+    { "id": 1001, "course_id": 101, "title": "Chapitre 1 - Connaissance du risque incendie" }
+  ],
+"questions": [
+  {
+    "id": 1,
+    "chapter_id": 1001,
+    "text": "Qu’est-ce que la combustion selon le guide ?",
+    "explanation": "La combustion requiert combustible, comburant et un initiateur (apport d’énergie). (p.20)"
+  },
+  {
+    "id": 2,
+    "chapter_id": 1001,
+    "text": "Selon l’ISO 13943 (norme internationale), qu’est-ce qu’un « feu » ?",
+    "explanation": "Le « feu » est un processus de combustion auto-entretenu, maîtrisé pour produire des effets utiles et dont le développement est maîtrisé dans le temps comme dans l’espace. (p.20)"
+  },
+  {
+    "id": 3,
+    "chapter_id": 1001,
+    "text": "Qu’est-ce qu’un « incendie » ?",
+    "explanation": "Un incendie est un feu dont le développement n’est pas maîtrisé dans l’espace et le temps. (p.20)"
+  },
+  {
+    "id": 4,
+    "chapter_id": 1001,
+    "text": "Mécanisme du feu : quelle est la première etape citée ?",
+    "explanation": "Étape 1 : La matière voit sa température augmenter par l’intermédiaire d’un transfert thermique et peut se décomposer en émettant des gaz inflammables. (p.21)"
+  },
+  {
+    "id": 5,
+    "chapter_id": 1001,
+    "text": "Mécanisme du feu : quelle est la deuxième étape citée ?",
+    "explanation": "Étape 2 : Inflammation des gaz. Une quantité de gaz suffisante est dégagée par la matière et mélangée à l’air. L’apport d’une source d’énergie suffisante permet alors l’inflammation du mélange. (p.21)"
+  },
+  {
+    "id": 6,
+    "chapter_id": 1001,
+    "text": "Modes de transferts de chaleur (Plusieurs réponses possibles)",
+    "explanation": "Les transferts cités sont la conduction, la convection et le rayonnement ; l’évaporation n’en fait pas partie. (p.21)"
+  },
+  {
+    "id": 7,
+    "chapter_id": 1001,
+    "text": "La convection correspond à :",
+    "explanation": "La convection désigne un transfert de chaleur s’effectuant par l’intermédiaire d’un fluide en mouvement (liquide ou gaz). Dans le cas de l’incendie, ce sont les fumées et gaz chauds qui se propagent dans les différents volumes de la structure. (p.21)"
+  },
+  {
+    "id": 8,
+    "chapter_id": 1001,
+    "text": "Le rayonnement correspond à :",
+    "explanation": "Le rayonnement correspond au processus d’émission ou de propagation de l’énergie sous forme d’ondes électromagnétiques. Il ne nécessite pas de contact matériel à l’inverse des deux modes de propagation de la chaleur précédents. (p.21)"
+  },
+  {
+    "id": 9,
+    "chapter_id": 1001,
+    "text": "En « feu naissant », le feu est :",
+    "explanation": "Cette phase initiale de la combustion est directement liée à la quantité de combustible. À ce stade le dégagement de chaleur est modéré et les fumées peu abondantes. On dit que le feu est « limité par le combustible ». (p.22)"
+  },
+  {
+    "id": 10,
+    "chapter_id": 1001,
+    "text": "Dangers associés aux fumées (Plusieurs réponses possibles)",
+    "explanation": "Liste complète des dangers associés aux fumées présentée dans le guide. (p.23)"
+  },
+  {
+    "id": 11,
+    "chapter_id": 1001,
+    "text": "Mécanisme du feu : quelle est la troisième étape citée ?",
+    "explanation": "Etablissement et maintien de la flamme. Suite à l’inflammation, la flamme est maintenue en surface si les gaz combustibles dégagés par la matière sont en quantité suffisante, si l’apport en air est suffisant et si les conditions thermiques sont adéquates. (p.21)"
+  },
+  {
+    "id": 12,
+    "chapter_id": 1001,
+    "text": "Les fumées correspondent à :",
+    "explanation": "Les fumées correspondent à l’ensemble visible des particules solides et/ou liquides en suspension et des gaz résultant d’une combustion ou d’une pyrolyse. (p.22)"
+  },
+  {
+    "id": 13,
+    "chapter_id": 1001,
+    "text": "Gaz résultants de la combustion sont généralement mentionnés :",
+    "explanation": "Les gaz résultants de la combustion sont généralement le dioxyde de carbone, le monoxyde de carbone et la vapeur d’eau ; d’autres gaz peuvent exister selon les matériaux. (p.22)"
+  },
+  {
+    "id": 14,
+    "chapter_id": 1001,
+    "text": "En plein développement, un feu est :",
+    "explanation": "Ultime phase de croissance du feu en structure : puissance et risques de propagation maximaux au regard de la ventilation. Le feu est alors limité par la ventilation ; la régression survient quand l’énergie décroît. (p.24)"
+  },
+  {
+    "id": 15,
+    "chapter_id": 1001,
+    "text": "Familles de phénomènes thermiques ? (Plusieurs réponses possibles)",
+    "explanation": "On distingue trois grandes familles : flashover, backdraft et FGI ; la propagation en façade n’est pas une famille, mais un contexte de propagation. (p.24)"
+  },
+  {
+    "id": 16,
+    "chapter_id": 1001,
+    "text": "Un feu correctement ventilé est associé à :",
+    "explanation": "Feu correctement ventilé ou feu limité par le combustible (FLC) ; son développement et sa puissance seront maximum. (p.24)"
+  },
+  {
+    "id": 17,
+    "chapter_id": 1001,
+    "text": "Le flashover correspond à :",
+    "explanation": "Passage brutal d’un feu localisé à l’embrasement généralisé du volume ventilé ; conduit au plein développement. (p.24)"
+  },
+  {
+    "id": 18,
+    "chapter_id": 1001,
+    "text": "Le backdraft peut se produire en phase de :",
+    "explanation": "Phénomène pouvant survenir après sous-ventilation ; un apport d’air soudain réactive la flamme et peut entraîner l’explosion des fumées. (p.24)"
+  },
+  {
+    "id": 19,
+    "chapter_id": 1001,
+    "text": "Les FGI correspondent à :",
+    "explanation": "Accumulation de produits de combustion et/ou gaz de pyrolyse qui s’enflamment au contact d’une source de chaleur. (p.24)"
+  },
+  {
+    "id": 20,
+    "chapter_id": 1001,
+    "text": "La conduction correspond à :",
+    "explanation": "La conduction est un mode de transfert de chaleur de proche en proche dans le matériau en lui-même (ex : barre métallique chauffée à l’une de ses extrémités qui transmet la chaleur à l’autre extrémité). On dit d’un matériau qu’il est thermiquement isolant ou conducteur. (p.21)"
+  }
+],
+
+"choices": [
+  { "id": 1, "question_id": 1, "text": "Réaction avec combustible, comburant, initiateur (apport d’énergie)", "is_correct": true },
+  { "id": 2, "question_id": 1, "text": "Réaction sans comburant ni énergie", "is_correct": false },
+  { "id": 3, "question_id": 1, "text": "Réaction avec fumées sans énergie", "is_correct": false },
+  { "id": 4, "question_id": 1, "text": "Réaction sans combustible avec chaleur", "is_correct": false },
+
+  { "id": 5, "question_id": 2, "text": "Processus de combustion non maîtrisé", "is_correct": false },
+  { "id": 6, "question_id": 2, "text": "Processus de combustion auto-entretenu maîtrisé", "is_correct": true },
+  { "id": 7, "question_id": 2, "text": "Incendie accidentel sans effets utiles", "is_correct": false },
+  { "id": 8, "question_id": 2, "text": "Combustion sans maîtrise ni utilité", "is_correct": false },
+
+  { "id": 9, "question_id": 3, "text": "Feu maîtrisé dans temps espace", "is_correct": false },
+  { "id": 10, "question_id": 3, "text": "Combustion avec maîtrise et utilité", "is_correct": false },
+  { "id": 11, "question_id": 3, "text": "Feu non maîtrisé dans l’espace et le temps", "is_correct": true },
+  { "id": 12, "question_id": 3, "text": "Feu maîtrisé avec effets utiles", "is_correct": false },
+
+  { "id": 13, "question_id": 4, "text": "Inflammation des gaz avec énergie", "is_correct": false },
+  { "id": 14, "question_id": 4, "text": "Maintien de flamme en surface", "is_correct": false },
+  { "id": 15, "question_id": 4, "text": "Mélange gaz combustibles avec air", "is_correct": false },
+  { "id": 16, "question_id": 4, "text": "Production des gaz de pyrolyse", "is_correct": true },
+
+  { "id": 17, "question_id": 5, "text": "Inflammation des gaz", "is_correct": true },
+  { "id": 18, "question_id": 5, "text": "Production des gaz de pyrolyse", "is_correct": false },
+  { "id": 19, "question_id": 5, "text": "Maintien de flamme en surface", "is_correct": false },
+  { "id": 20, "question_id": 5, "text": "Extinction par manque de comburant", "is_correct": false },
+
+  { "id": 21, "question_id": 6, "text": "Rayonnement", "is_correct": true },
+  { "id": 22, "question_id": 6, "text": "Evaporation", "is_correct": false },
+  { "id": 23, "question_id": 6, "text": "Conduction", "is_correct": true },
+  { "id": 24, "question_id": 6, "text": "Convection", "is_correct": true },
+
+  { "id": 25, "question_id": 7, "text": "Transfert de chaleur par un fluide en mouvement", "is_correct": true },
+  { "id": 26, "question_id": 7, "text": "Transfert par contact sans mouvement", "is_correct": false },
+  { "id": 27, "question_id": 7, "text": "Transfert par ondes électromagnétiques seules", "is_correct": false },
+  { "id": 28, "question_id": 7, "text": "Transfert par matériau thermiquement isolant", "is_correct": false },
+
+  { "id": 29, "question_id": 8, "text": "Nécessite contact matériel permanent obligatoire", "is_correct": false },
+  { "id": 30, "question_id": 8, "text": "Propagation de l’énergie par ondes électromagnétiques", "is_correct": true },
+  { "id": 31, "question_id": 8, "text": "Transfert par fluide en mouvement", "is_correct": false },
+  { "id": 32, "question_id": 8, "text": "Transfert dans matériau uniquement conducteur", "is_correct": false },
+
+  { "id": 33, "question_id": 9, "text": "Limité par la ventilation uniquement", "is_correct": false },
+  { "id": 34, "question_id": 9, "text": "Limité par la réaction chimique", "is_correct": false },
+  { "id": 35, "question_id": 9, "text": "Limité par le combustible", "is_correct": true },
+  { "id": 36, "question_id": 9, "text": "Limité par le rayonnement thermique", "is_correct": false },
+
+  { "id": 37, "question_id": 10, "text": "Inflammabilité, explosivité", "is_correct": true },
+  { "id": 38, "question_id": 10, "text": "Toxicité – corrosivité", "is_correct": true },
+  { "id": 39, "question_id": 10, "text": "Émission de particules", "is_correct": true },
+  { "id": 40, "question_id": 10, "text": "Opacité", "is_correct": true },
+  { "id": 41, "question_id": 10, "text": "Rayonnement", "is_correct": true },
+  { "id": 42, "question_id": 10, "text": "Envahissement et frein à la mobilité", "is_correct": true },
+  { "id": 43, "question_id": 10, "text": "Chaleur", "is_correct": true },
+
+  { "id": 44, "question_id": 11, "text": "Production initiale des gaz de pyrolyse", "is_correct": false },
+  { "id": 45, "question_id": 11, "text": "Établissement et maintien de la flamme", "is_correct": true },
+  { "id": 46, "question_id": 11, "text": "Extinction progressive par manque de comburant", "is_correct": false },
+  { "id": 47, "question_id": 11, "text": "Création d’une ventilation forcée par ouverture", "is_correct": false },
+
+  { "id": 48, "question_id": 12, "text": "Particules solides et/ou liquides en suspension et des gaz de combustion ou d’une pyrolyse", "is_correct": true },
+  { "id": 49, "question_id": 12, "text": "Air et vapeur d’eau sans produits de combustion spécifiques", "is_correct": false },
+  { "id": 50, "question_id": 12, "text": "Gaz atmosphériques dilués sans particules issues de combustion", "is_correct": false },
+  { "id": 51, "question_id": 12, "text": "Vapeur d’eau majoritaire en suspension visible uniquement", "is_correct": false },
+
+  { "id": 52, "question_id": 13, "text": "Cyanure d’hydrogène et chlorure d’hydrogène parfois", "is_correct": false },
+  { "id": 53, "question_id": 13, "text": "Dioxyde de carbone, monoxyde de carbone, vapeur d’eau", "is_correct": true },
+  { "id": 54, "question_id": 13, "text": "Hydrocarbures seuls sans autres gaz présents", "is_correct": false },
+  { "id": 55, "question_id": 13, "text": "Oxyde nitreux uniquement sans vapeur d’eau", "is_correct": false },
+
+  { "id": 56, "question_id": 14, "text": "Limité par le combustible uniquement", "is_correct": false },
+  { "id": 57, "question_id": 14, "text": "Limité par la réaction chimique", "is_correct": false },
+  { "id": 58, "question_id": 14, "text": "Limité par la ventilation", "is_correct": true },
+  { "id": 59, "question_id": 14, "text": "Limité par la pyrolyse seule", "is_correct": false },
+
+  { "id": 60, "question_id": 15, "text": "Embrasements généralisées éclairs (Flashover)", "is_correct": true },
+  { "id": 61, "question_id": 15, "text": "Propagation rapide en façade extérieure", "is_correct": false },
+  { "id": 62, "question_id": 15, "text": "Inflammations de gaz issus d’un incendie (Fire Gas Ignition)", "is_correct": true },
+  { "id": 63, "question_id": 15, "text": "Explosion de fumées (Backdraft)", "is_correct": true },
+
+  { "id": 64, "question_id": 16, "text": "Feu limité par la ventilation", "is_correct": false },
+  { "id": 65, "question_id": 16, "text": "Feu limité par les fumées", "is_correct": false },
+  { "id": 66, "question_id": 16, "text": "Feu limité par le rayonnement", "is_correct": false },
+  { "id": 67, "question_id": 16, "text": "Feu limité par le combustible", "is_correct": true },
+
+  { "id": 68, "question_id": 17, "text": "Passage brutal d’un feu localisé à l’embrasement généralisé", "is_correct": true },
+  { "id": 69, "question_id": 17, "text": "Explosion de fumées sous-ventilées uniquement", "is_correct": false },
+  { "id": 70, "question_id": 17, "text": "Inflammation de gaz après chauffage", "is_correct": false },
+  { "id": 71, "question_id": 17, "text": "Extinction rapide par manque air", "is_correct": false },
+
+  { "id": 72, "question_id": 18, "text": "Feu correctement ventilé en croissance", "is_correct": false },
+  { "id": 73, "question_id": 18, "text": "Feu sous-ventilé avec apport d’air", "is_correct": true },
+  { "id": 74, "question_id": 18, "text": "Feu naissant limité par combustible", "is_correct": false },
+  { "id": 75, "question_id": 18, "text": "Feu plein développement sans fumées", "is_correct": false },
+
+  { "id": 76, "question_id": 19, "text": "Explosion de fumées sous-ventilées", "is_correct": false },
+  { "id": 77, "question_id": 19, "text": "Passage à embrasement généralisé", "is_correct": false },
+  { "id": 78, "question_id": 19, "text": "Inflammation de gaz avec une source de chaleur", "is_correct": true },
+  { "id": 79, "question_id": 19, "text": "Extinction par évacuation des fumées", "is_correct": false },
+
+  { "id": 80, "question_id": 20, "text": "Transfert d’énergie par ondes électromagnétiques", "is_correct": false },
+  { "id": 81, "question_id": 20, "text": "Transfert de chaleur par fluide en mouvement", "is_correct": false },
+  { "id": 82, "question_id": 20, "text": "Transfert thermique par mélange d’air frais", "is_correct": false },
+  { "id": 83, "question_id": 20, "text": "Transfert de chaleur de proche en proche", "is_correct": true }
+]
 }
