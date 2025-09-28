@@ -27,6 +27,13 @@ window.toggleMenu = function(){
   if(menu) menu.classList.toggle("show");
 };
 
+function backLink(href) {
+  return `<div class="container" style="padding-top:12px">
+    <a href="${href}" class="muted">← Retour</a>
+  </div>`;
+}
+
+
 // ====== PAGE RENDERERS (injectent dans #content uniquement) ======
 async function pageThemes(){
   await loadData();
@@ -62,6 +69,12 @@ async function pageCourses(){
     <h2 style="margin:16px 0">${theme?.icon||"📚"} ${theme?.title||"Thème"}</h2>
     <div class="grid">${items}</div>
   `;
+  content.innerHTML = `
+  ${backLink("themes.html")}
+  <h2 style="margin:16px 0">${theme?.icon||"📚"} ${theme?.title||"Thème"}</h2>
+  <div class="grid">${items}</div>
+`;
+
 }
 
 async function pageChapters(){
@@ -80,6 +93,13 @@ async function pageChapters(){
     <h2 style="margin:16px 0">${course.title}</h2>
     <div class="grid">${items}</div>
   `;
+  content.innerHTML = `
+  ${backLink("themes.html")}
+  <h2 style="margin:16px 0">${course.title}</h2>
+  <div class="grid">${items}</div>
+`;
+
+
 }
 
 async function pageQuiz(){
@@ -162,6 +182,15 @@ async function pageQuiz(){
       location.href = "chapters.html?course=" + Data.getChapter(chapterId).course_id;
     };
   };
+  content.innerHTML = `
+  ${backLink("chapters.html?course="+chapter.course_id)}
+  <h2 style="margin:16px 0">QCM - ${chapter.title}</h2>
+  <form id="quizForm">
+    ${contentQuestions}
+    <button type="submit" class="btn">Valider le QCM</button>
+  </form>
+`;
+
 }
 
 // ====== ROUTER ======

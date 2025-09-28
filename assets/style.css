@@ -57,6 +57,17 @@ nav a:hover { color: #b22222; }
 .btn.secondary { background: #457b9d; }
 .btn.secondary:hover { background: #35607a; }
 
+/*===bouton retour===*/
+.muted {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+.muted:hover {
+  color: #b22222;
+}
+
+
 /* === FOOTER === */
 footer {
   background: #333; color: #fff; text-align: center;
