@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Référentiels - QCM Pompier</title>
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
 </head>
-<body>
+<body data-page="referentiels">
   <header>
-    <h1><span class="red">QCM</span> Pompier</h1>
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="QCM Pompier" class="logo">
+    </a>
     <nav>
       <div class="burger" onclick="toggleMenu()">
         <span></span><span></span><span></span>
@@ -36,12 +40,12 @@
     </p>
   </main>
 
+    <main class="container" id="content"></main>
   <footer>
     <p>&copy; 2025 QCM Pompier - Tous droits réservés</p>
   </footer>
 
-  <script>
-    function toggleMenu(){document.getElementById("mobileMenu").classList.toggle("show");}
-  </script>
+
+  <script src="assets/app.js"></script>
 </body>
 </html>

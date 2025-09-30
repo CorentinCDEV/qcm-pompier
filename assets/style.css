@@ -28,6 +28,17 @@ nav ul { list-style: none; display: flex; gap: 1.5rem; }
 nav a { color: #000; text-decoration: none; font-weight: bold; transition: color .3s; }
 nav a:hover { color: #b22222; }
 
+.logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+
 /* === Burger === */
 .burger { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
 .burger span { width: 25px; height: 3px; background: #000; }

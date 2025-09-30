@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QCM Pompier</title>
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
 </head>
 <body data-page="home">
   <!-- Header -->
-  <header>
-    <h1><span class="red">QCM</span> Pompier</h1>
+<header>
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="QCM Pompier" class="logo">
+    </a>
     <nav>
       <div class="burger" onclick="toggleMenu()">
         <span></span><span></span><span></span>
@@ -17,13 +21,13 @@
       <ul class="nav-links">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="themes.html">Thèmes</a></li>
-        <li><a href="referentiels.html" class="active">Référentiels</a></li>
+        <li><a href="referentiels.html">Référentiels</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav-links mobile" id="mobileMenu">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="themes.html">Thèmes</a></li>
-        <li><a href="referentiels.html" class="active">Référentiels</a></li>
+        <li><a href="referentiels.html">Référentiels</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
@@ -41,11 +45,14 @@
     <a href="themes.html" class="cta-btn">Commencer un QCM</a>
   </section>
 
+
+  <main class="container" id="content"></main>
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 QCM Pompier - Tous droits réservés</p>
     <p><a href="#">Mentions légales</a></p>
   </footer>
+
 
   <script src="assets/app.js"></script>
 </body>

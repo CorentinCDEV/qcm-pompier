@@ -4,243 +4,144 @@
     { "id": 2, "title": "Guides de techniques opérationnelles (GTO)", "icon": "📗" },
     { "id": 3, "title": "Le secours et soins d'urgence aux personnes (SSUAP)", "icon": "⛑️" }
   ],
+
+
   "courses": [
-    { "id": 101, "theme_id": 1, "title": "GDO - Incendies de structures 2018 V2" },
-    { "id": 102, "theme_id": 1, "title": "GDO - Feux de forêts 1ère édition 2021" },
-    { "id": 201, "theme_id": 2, "title": "GTO - Établissements techniques extinction 2018" },
-    { "id": 202, "theme_id": 2, "title": "GTO - Sauvetages Mise En Sécurité V2" },
-    { "id": 203, "theme_id": 2, "title": "GTO - Sauvegarde Opérationnelle" },
-    { "id": 204, "theme_id": 2, "title": "GTO - Lutte Feux Forêts Espaces Naturels" },
-    { "id": 301, "theme_id": 3, "title": "PSE" }
+    { "id": 201, "theme_id": 2, "title": "GTO - Établissements techniques extinction 2018" }
   ],
+
+
   "chapters": [
-    { "id": 1001, "course_id": 101, "title": "Chapitre 1 - Connaissance du risque incendie" }
+    { "id": 2001, "course_id": 201, "title": "Chapitre 1 - Principe de la défense extérieure contre l’incendie (DECI)" }
   ],
+
+
 "questions": [
-  {
-    "id": 1,
-    "chapter_id": 1001,
-    "text": "Qu’est-ce que la combustion selon le guide ?",
-    "explanation": "La combustion requiert combustible, comburant et un initiateur (apport d’énergie). (p.20)"
-  },
-  {
-    "id": 2,
-    "chapter_id": 1001,
-    "text": "Selon l’ISO 13943 (norme internationale), qu’est-ce qu’un « feu » ?",
-    "explanation": "Le « feu » est un processus de combustion auto-entretenu, maîtrisé pour produire des effets utiles et dont le développement est maîtrisé dans le temps comme dans l’espace. (p.20)"
-  },
-  {
-    "id": 3,
-    "chapter_id": 1001,
-    "text": "Qu’est-ce qu’un « incendie » ?",
-    "explanation": "Un incendie est un feu dont le développement n’est pas maîtrisé dans l’espace et le temps. (p.20)"
-  },
-  {
-    "id": 4,
-    "chapter_id": 1001,
-    "text": "Mécanisme du feu : quelle est la première etape citée ?",
-    "explanation": "Étape 1 : La matière voit sa température augmenter par l’intermédiaire d’un transfert thermique et peut se décomposer en émettant des gaz inflammables. (p.21)"
-  },
-  {
-    "id": 5,
-    "chapter_id": 1001,
-    "text": "Mécanisme du feu : quelle est la deuxième étape citée ?",
-    "explanation": "Étape 2 : Inflammation des gaz. Une quantité de gaz suffisante est dégagée par la matière et mélangée à l’air. L’apport d’une source d’énergie suffisante permet alors l’inflammation du mélange. (p.21)"
-  },
-  {
-    "id": 6,
-    "chapter_id": 1001,
-    "text": "Modes de transferts de chaleur (Plusieurs réponses possibles)",
-    "explanation": "Les transferts cités sont la conduction, la convection et le rayonnement ; l’évaporation n’en fait pas partie. (p.21)"
-  },
-  {
-    "id": 7,
-    "chapter_id": 1001,
-    "text": "La convection correspond à :",
-    "explanation": "La convection désigne un transfert de chaleur s’effectuant par l’intermédiaire d’un fluide en mouvement (liquide ou gaz). Dans le cas de l’incendie, ce sont les fumées et gaz chauds qui se propagent dans les différents volumes de la structure. (p.21)"
-  },
-  {
-    "id": 8,
-    "chapter_id": 1001,
-    "text": "Le rayonnement correspond à :",
-    "explanation": "Le rayonnement correspond au processus d’émission ou de propagation de l’énergie sous forme d’ondes électromagnétiques. Il ne nécessite pas de contact matériel à l’inverse des deux modes de propagation de la chaleur précédents. (p.21)"
-  },
-  {
-    "id": 9,
-    "chapter_id": 1001,
-    "text": "En « feu naissant », le feu est :",
-    "explanation": "Cette phase initiale de la combustion est directement liée à la quantité de combustible. À ce stade le dégagement de chaleur est modéré et les fumées peu abondantes. On dit que le feu est « limité par le combustible ». (p.22)"
-  },
-  {
-    "id": 10,
-    "chapter_id": 1001,
-    "text": "Dangers associés aux fumées (Plusieurs réponses possibles)",
-    "explanation": "Liste complète des dangers associés aux fumées présentée dans le guide. (p.23)"
-  },
-  {
-    "id": 11,
-    "chapter_id": 1001,
-    "text": "Mécanisme du feu : quelle est la troisième étape citée ?",
-    "explanation": "Etablissement et maintien de la flamme. Suite à l’inflammation, la flamme est maintenue en surface si les gaz combustibles dégagés par la matière sont en quantité suffisante, si l’apport en air est suffisant et si les conditions thermiques sont adéquates. (p.21)"
-  },
-  {
-    "id": 12,
-    "chapter_id": 1001,
-    "text": "Les fumées correspondent à :",
-    "explanation": "Les fumées correspondent à l’ensemble visible des particules solides et/ou liquides en suspension et des gaz résultant d’une combustion ou d’une pyrolyse. (p.22)"
-  },
-  {
-    "id": 13,
-    "chapter_id": 1001,
-    "text": "Gaz résultants de la combustion sont généralement mentionnés :",
-    "explanation": "Les gaz résultants de la combustion sont généralement le dioxyde de carbone, le monoxyde de carbone et la vapeur d’eau ; d’autres gaz peuvent exister selon les matériaux. (p.22)"
-  },
-  {
-    "id": 14,
-    "chapter_id": 1001,
-    "text": "En plein développement, un feu est :",
-    "explanation": "Ultime phase de croissance du feu en structure : puissance et risques de propagation maximaux au regard de la ventilation. Le feu est alors limité par la ventilation ; la régression survient quand l’énergie décroît. (p.24)"
-  },
-  {
-    "id": 15,
-    "chapter_id": 1001,
-    "text": "Familles de phénomènes thermiques ? (Plusieurs réponses possibles)",
-    "explanation": "On distingue trois grandes familles : flashover, backdraft et FGI ; la propagation en façade n’est pas une famille, mais un contexte de propagation. (p.24)"
-  },
-  {
-    "id": 16,
-    "chapter_id": 1001,
-    "text": "Un feu correctement ventilé est associé à :",
-    "explanation": "Feu correctement ventilé ou feu limité par le combustible (FLC) ; son développement et sa puissance seront maximum. (p.24)"
-  },
-  {
-    "id": 17,
-    "chapter_id": 1001,
-    "text": "Le flashover correspond à :",
-    "explanation": "Passage brutal d’un feu localisé à l’embrasement généralisé du volume ventilé ; conduit au plein développement. (p.24)"
-  },
-  {
-    "id": 18,
-    "chapter_id": 1001,
-    "text": "Le backdraft peut se produire en phase de :",
-    "explanation": "Phénomène pouvant survenir après sous-ventilation ; un apport d’air soudain réactive la flamme et peut entraîner l’explosion des fumées. (p.24)"
-  },
-  {
-    "id": 19,
-    "chapter_id": 1001,
-    "text": "Les FGI correspondent à :",
-    "explanation": "Accumulation de produits de combustion et/ou gaz de pyrolyse qui s’enflamment au contact d’une source de chaleur. (p.24)"
-  },
-  {
-    "id": 20,
-    "chapter_id": 1001,
-    "text": "La conduction correspond à :",
-    "explanation": "La conduction est un mode de transfert de chaleur de proche en proche dans le matériau en lui-même (ex : barre métallique chauffée à l’une de ses extrémités qui transmet la chaleur à l’autre extrémité). On dit d’un matériau qu’il est thermiquement isolant ou conducteur. (p.21)"
-  }
+  { "id": 1, "chapter_id": 2001, "text": "But prioritaire de la DECI ?", "explanation": "La défense extérieure contre l’incendie (DECI) a pour objet d’assurer, en fonction des besoins résultant des risques à prendre en compte, l’alimentation en eau des moyens des services d’incendie et de secours par l’intermédiaire de points d’eau identifiés à cette fin." },
+  { "id": 2, "chapter_id": 2001, "text": "Quel est le rôle principal du maire dans la DECI ?", "explanation": "Le maire s’assure de l’existence, de la suffisance et de la disponibilité des ressources au regard des risques." },
+  { "id": 3, "chapter_id": 2001, "text": "Familles de ressources en eau ? (Plusieurs réponses possibles)", "explanation": "Hydrants, points d’aspiration, autres prises d’eau constituent les familles reconnues." },
+  { "id": 4, "chapter_id": 2001, "text": "Espacement courant des PEI (Points d’Eau Incendie) important ?", "explanation": "En risque courant important, la distance entre PEI est d’environ 200 m." },
+  { "id": 5, "chapter_id": 2001, "text": "Symboles utilisés dans les plans de secours ? (Plusieurs réponses possibles)", "explanation": "Poteau d’incendie : un cercle, abréviation utilisable : PI.\nPrise d’eau sous pression, notamment bouche d’incendie : un carré, abréviation utilisable : BI.\nPoint d’aspiration aménagé (point de puisage…) : un triangle, abréviation utilisable : PA.\nCiterne aérienne ou enterrée : un rectangle, abréviation utilisable : CI." },
+  { "id": 6, "chapter_id": 2001, "text": "La pression de l’eau due au dénivelé du réseau ?", "explanation": "La différence de niveau procure environ 1 bar par 10 mètres de dénivelée." },
+  { "id": 7, "chapter_id": 2001, "text": "La caractéristique d’un réseau d’hydrants étoilé ?", "explanation": "Le réseau étoilé n’a qu’un seul sens d’écoulement et un secteur peut être condamné." },
+  { "id": 8, "chapter_id": 2001, "text": "Les différents débits indicatifs en fonction des poteaux incendie ? (Plusieurs réponses possibles)", "explanation": "PI 80 ≈ 30 m³/h ; PI 100 ≈ 60 m³/h ; PI 150 ≈ 120 m³/h." },
+  { "id": 9, "chapter_id": 2001, "text": "Le nombre de tours pour l’ouverture d’un PI de 100 mm est de ?", "explanation": "PI 100 : 13 tours ; PI 150 : 17 tours." },
+  { "id": 0, "chapter_id": 2001, "text": "Quel que soit le mode ou le type d’hydrant, celui-ci doit avoir certaines caractéristiques. Lesquelles ? (Plusieurs réponses possibles)", "explanation": "Ces appareils hydrauliques sont normalisés. Ils doivent être :\n- raccordés à un réseau d’eau sous pression, capables de fournir le débit réglementaire pendant au moins 2 heures ;\n- fournir une pression minimale de 1 bar et maximale de 16 bars ;\n- être incongelables (colonne d’arrivée à 1 m mini sous terre) ;\n- visibles et signalés par un marquage horizontal et vertical." },
+  { "id": 11, "chapter_id": 2001, "text": "Débit d’une bouche d’incendie ?", "explanation": "Possède un débit de 1 000 litres/minute. Deux bouches de 100 mm jumelées = 2 000 litres/min (120 m³/h)." },
+  { "id": 12, "chapter_id": 2001, "text": "Couleur d’un poteau incendie surpressé ?", "explanation": "Les PI branchés sur des réseaux surpressés et/ou additivés sont de couleur jaune sur au moins 50 % de leur surface." },
+  { "id": 13, "chapter_id": 2001, "text": "Comment protéger un poteau d’incendie ?", "explanation": "Des protections physiques peuvent être mises en place pour interdire l’approche des véhicules et assurer la pérennité, sans retarder la mise en œuvre des engins." },
+  { "id": 14, "chapter_id": 2001, "text": "Quelle est la signalisation d’une bouche ?", "explanation": "Plaque 220 × 100 mm, fond blanc, caractères rouges." },
+  { "id": 15, "chapter_id": 2001, "text": "Stationner au côté d’une bouche, est-ce autorisé ?", "explanation": "Interdit par le Code de la route (art. R.417-10 II 7°)." },
+  { "id": 16, "chapter_id": 2001, "text": "Quelle est normalement la distance d’un poteau relais ?", "explanation": "Le dispositif d’alimentation est normalement situé à 30 m au plus d’un PEI." },
+  { "id": 17, "chapter_id": 2001, "text": "Définition d’un PEI « haute pression » ?", "explanation": "Un PEI est dit « haute pression » si la pression dynamique à 60 m³/h est > 6 bars." },
+  { "id": 18, "chapter_id": 2001, "text": "Signalisation d’une réserve incendie ?", "explanation": "Réserve incendie signalée par un disque fléché indiquant la direction et la capacité." },
+  { "id": 19, "chapter_id": 2001, "text": "Signalisation d’un point d’aspiration ?", "explanation": "Signalisation par un triangle bleu accompagné d’une plaque relative à l’aire d’aspiration." },
+  { "id": 20, "chapter_id": 2001, "text": "Bouches d’incendie de « 80 millimètres » ?", "explanation": "Il n’existe pas de bouches de 80 mm." }
+
 ],
 
+
 "choices": [
-  { "id": 1, "question_id": 1, "text": "Réaction avec combustible, comburant, initiateur (apport d’énergie)", "is_correct": true },
-  { "id": 2, "question_id": 1, "text": "Réaction sans comburant ni énergie", "is_correct": false },
-  { "id": 3, "question_id": 1, "text": "Réaction avec fumées sans énergie", "is_correct": false },
-  { "id": 4, "question_id": 1, "text": "Réaction sans combustible avec chaleur", "is_correct": false },
+  { "id": 1, "question_id": 1, "text": "Assurer l’alimentation en eau rapidement", "is_correct": true },
+  { "id": 2, "question_id": 1, "text": "Limiter uniquement les dégâts matériels", "is_correct": false },
+  { "id": 3, "question_id": 1, "text": "Remplacer les réseaux d’adduction locaux", "is_correct": false },
+  { "id": 4, "question_id": 1, "text": "Interdire l’usage de l’eau publique", "is_correct": false },
 
-  { "id": 5, "question_id": 2, "text": "Processus de combustion non maîtrisé", "is_correct": false },
-  { "id": 6, "question_id": 2, "text": "Processus de combustion auto-entretenu maîtrisé", "is_correct": true },
-  { "id": 7, "question_id": 2, "text": "Incendie accidentel sans effets utiles", "is_correct": false },
-  { "id": 8, "question_id": 2, "text": "Combustion sans maîtrise ni utilité", "is_correct": false },
+  { "id": 5, "question_id": 2, "text": "S’assurer de l’existence, de la suffisance et de la disponibilité", "is_correct": true },
+  { "id": 6, "question_id": 2, "text": "Distribuer l’eau potable quotidiennement", "is_correct": false },
+  { "id": 7, "question_id": 2, "text": "Poser lui-même les poteaux incendie", "is_correct": false },
+  { "id": 8, "question_id": 2, "text": "Exploiter directement les réseaux communaux", "is_correct": false },
 
-  { "id": 9, "question_id": 3, "text": "Feu maîtrisé dans temps espace", "is_correct": false },
-  { "id": 10, "question_id": 3, "text": "Combustion avec maîtrise et utilité", "is_correct": false },
-  { "id": 11, "question_id": 3, "text": "Feu non maîtrisé dans l’espace et le temps", "is_correct": true },
-  { "id": 12, "question_id": 3, "text": "Feu maîtrisé avec effets utiles", "is_correct": false },
+  { "id": 9, "question_id": 3, "text": "Les hydrants poteaux et bouches", "is_correct": true },
+  { "id": 10, "question_id": 3, "text": "Les points d’aspiration aménagés utilisables", "is_correct": true },
+  { "id": 11, "question_id": 3, "text": "Toute autre prise d’eau reconnue", "is_correct": true },
+  { "id": 12, "question_id": 3, "text": "Les réserves privées non déclarées", "is_correct": false },
 
-  { "id": 13, "question_id": 4, "text": "Inflammation des gaz avec énergie", "is_correct": false },
-  { "id": 14, "question_id": 4, "text": "Maintien de flamme en surface", "is_correct": false },
-  { "id": 15, "question_id": 4, "text": "Mélange gaz combustibles avec air", "is_correct": false },
-  { "id": 16, "question_id": 4, "text": "Production des gaz de pyrolyse", "is_correct": true },
+  { "id": 13, "question_id": 4, "text": "100 mètres", "is_correct": false },
+  { "id": 14, "question_id": 4, "text": "150 mètres", "is_correct": false },
+  { "id": 15, "question_id": 4, "text": "200 mètres", "is_correct": true },
+  { "id": 16, "question_id": 4, "text": "300 mètres", "is_correct": false },
 
-  { "id": 17, "question_id": 5, "text": "Inflammation des gaz", "is_correct": true },
-  { "id": 18, "question_id": 5, "text": "Production des gaz de pyrolyse", "is_correct": false },
-  { "id": 19, "question_id": 5, "text": "Maintien de flamme en surface", "is_correct": false },
-  { "id": 20, "question_id": 5, "text": "Extinction par manque de comburant", "is_correct": false },
+  { "id": 17, "question_id": 5, "text": "Poteau incendie : un cercle, abréviation PI", "is_correct": true },
+  { "id": 18, "question_id": 5, "text": "Bouche d’incendie : un carré, abréviation BI", "is_correct": true },
+  { "id": 19, "question_id": 5, "text": "Point d’aspiration : un triangle, abréviation PA", "is_correct": true },
+  { "id": 20, "question_id": 5, "text": "Citerne aérienne ou enterrée : un rectangle, abréviation CI", "is_correct": true },
 
-  { "id": 21, "question_id": 6, "text": "Rayonnement", "is_correct": true },
-  { "id": 22, "question_id": 6, "text": "Evaporation", "is_correct": false },
-  { "id": 23, "question_id": 6, "text": "Conduction", "is_correct": true },
-  { "id": 24, "question_id": 6, "text": "Convection", "is_correct": true },
+  { "id": 21, "question_id": 6, "text": "Un bar pour dix mètres", "is_correct": true },
+  { "id": 22, "question_id": 6, "text": "Deux bars pour dix mètres", "is_correct": false },
+  { "id": 23, "question_id": 6, "text": "Un bar pour cinq mètres", "is_correct": false },
+  { "id": 24, "question_id": 6, "text": "Un demi-bar pour dix mètres", "is_correct": false },
 
-  { "id": 25, "question_id": 7, "text": "Transfert de chaleur par un fluide en mouvement", "is_correct": true },
-  { "id": 26, "question_id": 7, "text": "Transfert par contact sans mouvement", "is_correct": false },
-  { "id": 27, "question_id": 7, "text": "Transfert par ondes électromagnétiques seules", "is_correct": false },
-  { "id": 28, "question_id": 7, "text": "Transfert par matériau thermiquement isolant", "is_correct": false },
+  { "id": 25, "question_id": 7, "text": "Un seul sens de circulation", "is_correct": true },
+  { "id": 26, "question_id": 7, "text": "Plusieurs sens de circulation", "is_correct": false },
+  { "id": 27, "question_id": 7, "text": "Plusieurs réservoirs interconnectés simultanément", "is_correct": false },
+  { "id": 28, "question_id": 7, "text": "Redondance systématique de chaque branche", "is_correct": false },
 
-  { "id": 29, "question_id": 8, "text": "Nécessite contact matériel permanent obligatoire", "is_correct": false },
-  { "id": 30, "question_id": 8, "text": "Propagation de l’énergie par ondes électromagnétiques", "is_correct": true },
-  { "id": 31, "question_id": 8, "text": "Transfert par fluide en mouvement", "is_correct": false },
-  { "id": 32, "question_id": 8, "text": "Transfert dans matériau uniquement conducteur", "is_correct": false },
+  { "id": 29, "question_id": 8, "text": "PI de 80 millimètres : débit de 30 m³/h", "is_correct": true },
+  { "id": 30, "question_id": 8, "text": "PI de 100 millimètres : débit de 60 m³/h", "is_correct": true },
+  { "id": 31, "question_id": 8, "text": "PI de 150 millimètres : débit de 120 m³/h", "is_correct": true },
+  { "id": 32, "question_id": 8, "text": "PI de 120 millimètres : débit de 80 m³/h", "is_correct": false },
 
-  { "id": 33, "question_id": 9, "text": "Limité par la ventilation uniquement", "is_correct": false },
-  { "id": 34, "question_id": 9, "text": "Limité par la réaction chimique", "is_correct": false },
-  { "id": 35, "question_id": 9, "text": "Limité par le combustible", "is_correct": true },
-  { "id": 36, "question_id": 9, "text": "Limité par le rayonnement thermique", "is_correct": false },
+  { "id": 33, "question_id": 9, "text": "Treize tours avec clé adaptée", "is_correct": true },
+  { "id": 34, "question_id": 9, "text": "Dix tours avec clé adaptée", "is_correct": false },
+  { "id": 35, "question_id": 9, "text": "Dix-sept tours avec clé adaptée", "is_correct": false },
+  { "id": 36, "question_id": 9, "text": "Quinze tours avec clé adaptée", "is_correct": false },
 
-  { "id": 37, "question_id": 10, "text": "Inflammabilité, explosivité", "is_correct": true },
-  { "id": 38, "question_id": 10, "text": "Toxicité – corrosivité", "is_correct": true },
-  { "id": 39, "question_id": 10, "text": "Émission de particules", "is_correct": true },
-  { "id": 40, "question_id": 10, "text": "Opacité", "is_correct": true },
-  { "id": 41, "question_id": 10, "text": "Rayonnement", "is_correct": true },
-  { "id": 42, "question_id": 10, "text": "Envahissement et frein à la mobilité", "is_correct": true },
-  { "id": 43, "question_id": 10, "text": "Chaleur", "is_correct": true },
+  { "id": 37, "question_id": 0, "text": "Raccordés à un réseau d’eau sous pression, capable de fournir le débit réglementaire pendant au moins 2 heures", "is_correct": true },
+  { "id": 38, "question_id": 0, "text": "Fournir une pression minimale de 1 bar et maximale de 16 bars", "is_correct": true },
+  { "id": 39, "question_id": 0, "text": "Être incongelables : colonne d’arrivée d’eau située à 1 mètre minimum sous terre", "is_correct": true },
+  { "id": 40, "question_id": 0, "text": "Visibles et signalés par un marquage horizontal et vertical", "is_correct": true },
 
-  { "id": 44, "question_id": 11, "text": "Production initiale des gaz de pyrolyse", "is_correct": false },
-  { "id": 45, "question_id": 11, "text": "Établissement et maintien de la flamme", "is_correct": true },
-  { "id": 46, "question_id": 11, "text": "Extinction progressive par manque de comburant", "is_correct": false },
-  { "id": 47, "question_id": 11, "text": "Création d’une ventilation forcée par ouverture", "is_correct": false },
+  { "id": 41, "question_id": 11, "text": "1000 litres/min", "is_correct": true },
+  { "id": 42, "question_id": 11, "text": "800 litres/min", "is_correct": false },
+  { "id": 43, "question_id": 11, "text": "1200 litres/min", "is_correct": false },
+  { "id": 44, "question_id": 11, "text": "500 litres/min", "is_correct": false },
 
-  { "id": 48, "question_id": 12, "text": "Particules solides et/ou liquides en suspension et des gaz de combustion ou d’une pyrolyse", "is_correct": true },
-  { "id": 49, "question_id": 12, "text": "Air et vapeur d’eau sans produits de combustion spécifiques", "is_correct": false },
-  { "id": 50, "question_id": 12, "text": "Gaz atmosphériques dilués sans particules issues de combustion", "is_correct": false },
-  { "id": 51, "question_id": 12, "text": "Vapeur d’eau majoritaire en suspension visible uniquement", "is_correct": false },
+  { "id": 45, "question_id": 12, "text": "Rouge uniforme sur toute la surface", "is_correct": false },
+  { "id": 46, "question_id": 12, "text": "Jaune sur au moins la moitié", "is_correct": true },
+  { "id": 47, "question_id": 12, "text": "Gris anthracite sur capot", "is_correct": false },
+  { "id": 48, "question_id": 12, "text": "Bleu sur le capot supérieur seulement", "is_correct": false },
 
-  { "id": 52, "question_id": 13, "text": "Cyanure d’hydrogène et chlorure d’hydrogène parfois", "is_correct": false },
-  { "id": 53, "question_id": 13, "text": "Dioxyde de carbone, monoxyde de carbone, vapeur d’eau", "is_correct": true },
-  { "id": 54, "question_id": 13, "text": "Hydrocarbures seuls sans autres gaz présents", "is_correct": false },
-  { "id": 55, "question_id": 13, "text": "Oxyde nitreux uniquement sans vapeur d’eau", "is_correct": false },
+  { "id": 49, "question_id": 13, "text": "Des protections physiques peuvent exister", "is_correct": true },
+  { "id": 50, "question_id": 13, "text": "Elles peuvent retarder légèrement l’accès", "is_correct": false },
+  { "id": 51, "question_id": 13, "text": "Elles doivent empêcher l’accès des engins", "is_correct": false },
+  { "id": 52, "question_id": 13, "text": "Elles doivent rester fermées en permanence", "is_correct": false },
 
-  { "id": 56, "question_id": 14, "text": "Limité par le combustible uniquement", "is_correct": false },
-  { "id": 57, "question_id": 14, "text": "Limité par la réaction chimique", "is_correct": false },
-  { "id": 58, "question_id": 14, "text": "Limité par la ventilation", "is_correct": true },
-  { "id": 59, "question_id": 14, "text": "Limité par la pyrolyse seule", "is_correct": false },
+  { "id": 53, "question_id": 14, "text": "Plaque blanche caractères rouges", "is_correct": true },
+  { "id": 54, "question_id": 14, "text": "Plaque rouge caractères blancs", "is_correct": false },
+  { "id": 55, "question_id": 14, "text": "Plaque bleue caractères blancs", "is_correct": false },
+  { "id": 56, "question_id": 14, "text": "Plaque jaune caractères noirs", "is_correct": false },
 
-  { "id": 60, "question_id": 15, "text": "Embrasements généralisées éclairs (Flashover)", "is_correct": true },
-  { "id": 61, "question_id": 15, "text": "Propagation rapide en façade extérieure", "is_correct": false },
-  { "id": 62, "question_id": 15, "text": "Inflammations de gaz issus d’un incendie (Fire Gas Ignition)", "is_correct": true },
-  { "id": 63, "question_id": 15, "text": "Explosion de fumées (Backdraft)", "is_correct": true },
+  { "id": 57, "question_id": 15, "text": "Autorisé selon horaire municipal", "is_correct": false },
+  { "id": 58, "question_id": 15, "text": "Interdit par le code routier", "is_correct": true },
+  { "id": 59, "question_id": 15, "text": "Toléré pour livraisons urgentes", "is_correct": false },
+  { "id": 60, "question_id": 15, "text": "Soumis à arrêté préfectoral", "is_correct": false },
 
-  { "id": 64, "question_id": 16, "text": "Feu limité par la ventilation", "is_correct": false },
-  { "id": 65, "question_id": 16, "text": "Feu limité par les fumées", "is_correct": false },
-  { "id": 66, "question_id": 16, "text": "Feu limité par le rayonnement", "is_correct": false },
-  { "id": 67, "question_id": 16, "text": "Feu limité par le combustible", "is_correct": true },
+  { "id": 61, "question_id": 16, "text": "30 mètres depuis un PEI", "is_correct": true },
+  { "id": 62, "question_id": 16, "text": "20 mètres depuis un PEI", "is_correct": false },
+  { "id": 63, "question_id": 16, "text": "50 mètres depuis un PEI", "is_correct": false },
+  { "id": 64, "question_id": 16, "text": "10 mètres depuis un PEI", "is_correct": false },
 
-  { "id": 68, "question_id": 17, "text": "Passage brutal d’un feu localisé à l’embrasement généralisé", "is_correct": true },
-  { "id": 69, "question_id": 17, "text": "Explosion de fumées sous-ventilées uniquement", "is_correct": false },
-  { "id": 70, "question_id": 17, "text": "Inflammation de gaz après chauffage", "is_correct": false },
-  { "id": 71, "question_id": 17, "text": "Extinction rapide par manque air", "is_correct": false },
+  { "id": 65, "question_id": 17, "text": "Pression dynamique à 60 m³/h supérieure à 6 bars", "is_correct": true },
+  { "id": 66, "question_id": 17, "text": "Pression statique à 60 m³/h supérieure à 6 bars", "is_correct": false },
+  { "id": 67, "question_id": 17, "text": "Pression dynamique à 30 m³/h supérieure à 3 bars", "is_correct": false },
+  { "id": 68, "question_id": 17, "text": "Pression statique à 30 m³/h supérieure à 3 bars", "is_correct": false },
 
-  { "id": 72, "question_id": 18, "text": "Feu correctement ventilé en croissance", "is_correct": false },
-  { "id": 73, "question_id": 18, "text": "Feu sous-ventilé avec apport d’air", "is_correct": true },
-  { "id": 74, "question_id": 18, "text": "Feu naissant limité par combustible", "is_correct": false },
-  { "id": 75, "question_id": 18, "text": "Feu plein développement sans fumées", "is_correct": false },
+  { "id": 69, "question_id": 18, "text": "Disque fléché mentionnant sa direction et sa capacité", "is_correct": true },
+  { "id": 70, "question_id": 18, "text": "Carré blanc mentionnant sa direction et sa profondeur", "is_correct": false },
+  { "id": 71, "question_id": 18, "text": "Triangle rouge mentionnant sa direction et son accès", "is_correct": false },
+  { "id": 72, "question_id": 18, "text": "Rectangle vert mentionnant sa distance", "is_correct": false },
 
-  { "id": 76, "question_id": 19, "text": "Explosion de fumées sous-ventilées", "is_correct": false },
-  { "id": 77, "question_id": 19, "text": "Passage à embrasement généralisé", "is_correct": false },
-  { "id": 78, "question_id": 19, "text": "Inflammation de gaz avec une source de chaleur", "is_correct": true },
-  { "id": 79, "question_id": 19, "text": "Extinction par évacuation des fumées", "is_correct": false },
+  { "id": 73, "question_id": 19, "text": "Triangle bleu avec sa plaque relative à l’aire d’aspiration", "is_correct": true },
+  { "id": 74, "question_id": 19, "text": "Cercle jaune avec sa plaque relative à l’aire d’aspiration", "is_correct": false },
+  { "id": 75, "question_id": 19, "text": "Carré blanc avec sa plaque relative à l’aire d’aspiration", "is_correct": false },
+  { "id": 76, "question_id": 19, "text": "Rectangle rouge avec sa plaque relative à l’aire d’aspiration", "is_correct": false },
 
-  { "id": 80, "question_id": 20, "text": "Transfert d’énergie par ondes électromagnétiques", "is_correct": false },
-  { "id": 81, "question_id": 20, "text": "Transfert de chaleur par fluide en mouvement", "is_correct": false },
-  { "id": 82, "question_id": 20, "text": "Transfert thermique par mélange d’air frais", "is_correct": false },
-  { "id": 83, "question_id": 20, "text": "Transfert de chaleur de proche en proche", "is_correct": true }
+  { "id": 77, "question_id": 20, "text": "Non cette dimension n’existe", "is_correct": true },
+  { "id": 78, "question_id": 20, "text": "Oui pour anciens réseaux urbains", "is_correct": false },
+  { "id": 79, "question_id": 20, "text": "Oui pour réseaux industriels spéciaux", "is_correct": false },
+  { "id": 80, "question_id": 20, "text": "Non mais tolérance exceptionnelle locale", "is_correct": false }
 ]
+
+
 }
