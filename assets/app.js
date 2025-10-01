@@ -63,7 +63,7 @@ async function pageCourses() {
     <div class="card">
       <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
         <div><div style="font-weight:800">${c.title}</div></div>
-        <a class="btn secondary" href="chapters.html?course=${c.id}">Voir chapitres</a>
+        <a class="btn secondary" href="chapters.html?course=${c.id}">Voir les chapitres</a>
       </div>
     </div>
   `).join("");

@@ -1,8 +1,6 @@
 {
   "themes": [
-    { "id": 1, "title": "Guide de doctrine opérationnelle (GDO)", "icon": "📘" },
-    { "id": 2, "title": "Guides de techniques opérationnelles (GTO)", "icon": "📗" },
-    { "id": 3, "title": "Le secours et soins d'urgence aux personnes (SSUAP)", "icon": "⛑️" }
+    { "id": 2, "title": "Guides de techniques opérationnelles (GTO)", "icon": "📗" }
   ],
 
 
@@ -19,14 +17,14 @@
 "questions": [
   { "id": 1, "chapter_id": 2001, "text": "But prioritaire de la DECI ?", "explanation": "La défense extérieure contre l’incendie (DECI) a pour objet d’assurer, en fonction des besoins résultant des risques à prendre en compte, l’alimentation en eau des moyens des services d’incendie et de secours par l’intermédiaire de points d’eau identifiés à cette fin." },
   { "id": 2, "chapter_id": 2001, "text": "Quel est le rôle principal du maire dans la DECI ?", "explanation": "Le maire s’assure de l’existence, de la suffisance et de la disponibilité des ressources au regard des risques." },
-  { "id": 3, "chapter_id": 2001, "text": "Familles de ressources en eau ? (Plusieurs réponses possibles)", "explanation": "Hydrants, points d’aspiration, autres prises d’eau constituent les familles reconnues." },
+  { "id": 3, "chapter_id": 2001, "text": "Familles de ressources en eau ?", "explanation": "Hydrants, points d’aspiration, autres prises d’eau constituent les familles reconnues." },
   { "id": 4, "chapter_id": 2001, "text": "Espacement courant des PEI (Points d’Eau Incendie) important ?", "explanation": "En risque courant important, la distance entre PEI est d’environ 200 m." },
-  { "id": 5, "chapter_id": 2001, "text": "Symboles utilisés dans les plans de secours ? (Plusieurs réponses possibles)", "explanation": "Poteau d’incendie : un cercle, abréviation utilisable : PI.\nPrise d’eau sous pression, notamment bouche d’incendie : un carré, abréviation utilisable : BI.\nPoint d’aspiration aménagé (point de puisage…) : un triangle, abréviation utilisable : PA.\nCiterne aérienne ou enterrée : un rectangle, abréviation utilisable : CI." },
+  { "id": 5, "chapter_id": 2001, "text": "Symboles utilisés dans les plans de secours ?", "explanation": "Poteau d’incendie : un cercle, abréviation utilisable : PI.\nPrise d’eau sous pression, notamment bouche d’incendie : un carré, abréviation utilisable : BI.\nPoint d’aspiration aménagé (point de puisage…) : un triangle, abréviation utilisable : PA.\nCiterne aérienne ou enterrée : un rectangle, abréviation utilisable : CI." },
   { "id": 6, "chapter_id": 2001, "text": "La pression de l’eau due au dénivelé du réseau ?", "explanation": "La différence de niveau procure environ 1 bar par 10 mètres de dénivelée." },
   { "id": 7, "chapter_id": 2001, "text": "La caractéristique d’un réseau d’hydrants étoilé ?", "explanation": "Le réseau étoilé n’a qu’un seul sens d’écoulement et un secteur peut être condamné." },
-  { "id": 8, "chapter_id": 2001, "text": "Les différents débits indicatifs en fonction des poteaux incendie ? (Plusieurs réponses possibles)", "explanation": "PI 80 ≈ 30 m³/h ; PI 100 ≈ 60 m³/h ; PI 150 ≈ 120 m³/h." },
+  { "id": 8, "chapter_id": 2001, "text": "Les différents débits indicatifs en fonction des poteaux incendie ?", "explanation": "PI 80 ≈ 30 m³/h ; PI 100 ≈ 60 m³/h ; PI 150 ≈ 120 m³/h." },
   { "id": 9, "chapter_id": 2001, "text": "Le nombre de tours pour l’ouverture d’un PI de 100 mm est de ?", "explanation": "PI 100 : 13 tours ; PI 150 : 17 tours." },
-  { "id": 0, "chapter_id": 2001, "text": "Quel que soit le mode ou le type d’hydrant, celui-ci doit avoir certaines caractéristiques. Lesquelles ? (Plusieurs réponses possibles)", "explanation": "Ces appareils hydrauliques sont normalisés. Ils doivent être :\n- raccordés à un réseau d’eau sous pression, capables de fournir le débit réglementaire pendant au moins 2 heures ;\n- fournir une pression minimale de 1 bar et maximale de 16 bars ;\n- être incongelables (colonne d’arrivée à 1 m mini sous terre) ;\n- visibles et signalés par un marquage horizontal et vertical." },
+  { "id": 10, "chapter_id": 2001, "text": "Quel que soit le mode ou le type d’hydrant, celui-ci doit avoir certaines caractéristiques. Lesquelles ?", "explanation": "Ces appareils hydrauliques sont normalisés. Ils doivent être :\n- raccordés à un réseau d’eau sous pression, capables de fournir le débit réglementaire pendant au moins 2 heures ;\n- fournir une pression minimale de 1 bar et maximale de 16 bars ;\n- être incongelables (colonne d’arrivée à 1 m mini sous terre) ;\n- visibles et signalés par un marquage horizontal et vertical." },
   { "id": 11, "chapter_id": 2001, "text": "Débit d’une bouche d’incendie ?", "explanation": "Possède un débit de 1 000 litres/minute. Deux bouches de 100 mm jumelées = 2 000 litres/min (120 m³/h)." },
   { "id": 12, "chapter_id": 2001, "text": "Couleur d’un poteau incendie surpressé ?", "explanation": "Les PI branchés sur des réseaux surpressés et/ou additivés sont de couleur jaune sur au moins 50 % de leur surface." },
   { "id": 13, "chapter_id": 2001, "text": "Comment protéger un poteau d’incendie ?", "explanation": "Des protections physiques peuvent être mises en place pour interdire l’approche des véhicules et assurer la pérennité, sans retarder la mise en œuvre des engins." },
@@ -36,7 +34,40 @@
   { "id": 17, "chapter_id": 2001, "text": "Définition d’un PEI « haute pression » ?", "explanation": "Un PEI est dit « haute pression » si la pression dynamique à 60 m³/h est > 6 bars." },
   { "id": 18, "chapter_id": 2001, "text": "Signalisation d’une réserve incendie ?", "explanation": "Réserve incendie signalée par un disque fléché indiquant la direction et la capacité." },
   { "id": 19, "chapter_id": 2001, "text": "Signalisation d’un point d’aspiration ?", "explanation": "Signalisation par un triangle bleu accompagné d’une plaque relative à l’aire d’aspiration." },
-  { "id": 20, "chapter_id": 2001, "text": "Bouches d’incendie de « 80 millimètres » ?", "explanation": "Il n’existe pas de bouches de 80 mm." }
+  { "id": 20, "chapter_id": 2001, "text": "Bouches d’incendie de « 80 millimètres » ?", "explanation": "Il n’existe pas de bouches de 80 mm." },
+  { "id": 21, "chapter_id": 2001, "text": "Caractéristique d’un réseau maillé ?", "explanation": "Un réseau maillé part de plusieurs conduites et forme un maillage, assurant la continuité de l’écoulement de l’eau dans tous les sens." },
+  { "id": 22, "chapter_id": 2001, "text": "Éléments d’une aire d’aspiration ?", "explanation": "Aire d’aspiration : surface minimale 4×3 m (MPR) et 8×4 m (PL), résistance suffisante, pente de 2 % limitée à 7 %, calage fixe, accès sans manœuvre et hauteur cohérente avec les capacités d’aspiration." },
+  { "id": 23, "chapter_id": 2001, "text": "Intérêt d’une estacade d’aspiration ?", "explanation": "Une estacade permet de travailler en berge instable tout en maintenant une aspiration verticale." },
+  { "id": 24, "chapter_id": 2001, "text": "Un guichet d’aspiration sur un pont sert à…", "explanation": "Le guichet évite le col de cygne lors du passage des aspiraux à travers l’ouvrage." },
+  { "id": 25, "chapter_id": 2001, "text": "But d’un point d’aspiration déporté ?", "explanation": "Lorsque l’accès au plan d’eau est impossible, un puits relié par conduite souterraine crée un point d’aspiration déporté très accessible, au plus près de la rive." },
+  { "id": 26, "chapter_id": 2001, "text": "Comment éviter l’aspiration d’air et d’impuretés sur une aire d’aspiration avec dispositifs fixes d’aspiration ?", "explanation": "Avec un dispositif fixe, la crépine sans clapet est positionnée à 0,5 m au-dessus du fond et 0,3 m sous le niveau bas pour limiter la prise d’air et d’impuretés." },
+  { "id": 27, "chapter_id": 2001, "text": "Implantation correcte de la crépine sans clapet sur une aire d’aspiration fixe ?", "explanation": "La crépine sans clapet doit être au moins 0,3 m sous le niveau le plus bas et 0,5 m au-dessus du fond." },
+  { "id": 28, "chapter_id": 2001, "text": "Dimension minimale d’un guichet d’aspiration sur pont ?", "explanation": "Un guichet d’aspiration présente une ouverture minimale de 35 × 40 cm pour le passage des aspiraux." },
+  { "id": 29, "chapter_id": 2001, "text": "Éléments d’un dispositif fixe d’aspiration ?", "explanation": "Le dispositif fixe comprend un ½ raccord à 0,5–0,8 m au-dessus de l’aire, une canalisation adaptée et une crépine sans clapet correctement positionnée." },
+  { "id": 30, "chapter_id": 2001, "text": "Couleur d’un poteau d’aspiration ?", "explanation": "Le poteau d’aspiration est de couleur bleue, indiquant une prise dédiée à l’aspiration." },
+  { "id": 31, "chapter_id": 2001, "text": "Sorties d’un poteau incendie de 100 mm ?", "explanation": "Un poteau incendie de 100 mm comporte une sortie de 100 mm et deux sorties de 65 mm." },
+  { "id": 32, "chapter_id": 2001, "text": "Atout d’un poteau incendie « type choc » ?", "explanation": "Le dispositif « type choc » limite l’arrachement et évite le jaillissement d’eau en cas de choc." },
+  { "id": 33, "chapter_id": 2001, "text": "Orientation de mise en station de l’engin sur l’aire ?", "explanation": "La mise en station de l’engin se fait perpendiculairement ou parallèlement au point d’eau, selon l’aire et l’accès." },
+  { "id": 34, "chapter_id": 2001, "text": "Aménagement de pont : en plus du guichet, il faut…", "explanation": "En plus du guichet, une aire d’aspiration conforme est nécessaire pour la mise en station de l’engin." },
+  { "id": 35, "chapter_id": 2001, "text": "Eau sablonneuse pour un point d’aspiration déporté : mesure complémentaire ?", "explanation": "En présence d’eau sablonneuse, une fosse de décantation est prévue entre le plan d’eau et le puits déporté." },
+  { "id": 36, "chapter_id": 2001, "text": "Les réserves souples peuvent-elles servir de points d’eau incendie ?", "explanation": "Les réserves souples font partie des points d’eau artificiels mobilisables pour l’alimentation en eau." },
+  { "id": 37, "chapter_id": 2001, "text": "Réservoirs d’incendie ouverts : dispositions requises ?", "explanation": "Pour les réservoirs ouverts, prévoir des dispositifs anti-chute, une corde/échelle et un accès praticable pour les engins." },
+  { "id": 38, "chapter_id": 2001, "text": "Réservoirs d’incendie couverts/enterrés : avantages cités ?", "explanation": "Les réservoirs couverts/enterrés apportent une meilleure hygiène, moins d’accidents, moins de gel/évaporation et un intérêt esthétique." },
+  { "id": 39, "chapter_id": 2001, "text": "Dimensionnement « risque courant » : volume et durée ?", "explanation": "Pour le risque courant, la référence retenue est 120 m³ d’eau disponibles pendant 2 heures." },
+  { "id": 40, "chapter_id": 2001, "text": "Puisards d’aspiration : les conditions ?", "explanation": "Les puisards (anciens) doivent présenter une alimentation d’au moins 80 mm et 6 L/s à gueule bée, pour une capacité minimale de 2 m³." },
+  { "id": 41, "chapter_id": 2001, "text": "Rôle de l’évent sur un réservoir d’incendie aérien ?", "explanation": "L’évent garantit l’admission d’air en partie haute du réservoir pour permettre l’aspiration et préserver l’enveloppe." },
+  { "id": 42, "chapter_id": 2001, "text": "Réserve d’incendie souple : équipements et avantages ?", "explanation": "Implantation sur support stable, équipement d’aspiration protégé du gel, et protection contre intrusions/impuretés sont mis en avant." },
+  { "id": 43, "chapter_id": 2001, "text": "Point d’eau incendie inaccessible aux engins : matériel minimal à mettre en œuvre ?", "explanation": "Quand le PEI est inaccessible, la solution minimale est la mise en œuvre d’une motopompe flottante." },
+  { "id": 44, "chapter_id": 2001, "text": "Piscines privées : statut vis-à-vis des points d’eau incendie ?", "explanation": "Les piscines privées ne sont généralement pas identifiées comme points d’eau incendie reconnus." },
+  { "id": 45, "chapter_id": 2001, "text": "Réseaux d’irrigation agricoles : peut-on les utiliser ?", "explanation": "Ces réseaux peuvent être mobilisés comme prises d’eau si les conditions et aménagements locaux le permettent." },
+  { "id": 46, "chapter_id": 2001, "text": "PEI « haute pression » : précautions de mise en œuvre ?", "explanation": "Vérifier les raccordements, ouvrir progressivement et maîtriser la pression pour protéger le matériel." },
+  { "id": 47, "chapter_id": 2001, "text": "Sorties présentes sur un PI de 150 mm ?", "explanation": "Un PI de 150 mm comporte deux sorties de 100 mm et une sortie de 65 mm." },
+  { "id": 48, "chapter_id": 2001, "text": "Sorties présentes sur un PI de 80 mm ?", "explanation": "Un PI de 80 mm dispose d’une sortie de 65 mm et, selon les modèles, jusqu’à deux sorties de 40 mm." },
+  { "id": 49, "chapter_id": 2001, "text": "Points d’eau artificiels : quelle est leur alimentation ?", "explanation": "L’alimentation peut provenir des toitures, de la collecte au sol avec vanne dédiée, ou d’un réseau ne permettant pas un PI." },
+  { "id": 50, "chapter_id": 2001, "text": "Points d’eau artificiels : obligation d’information ?", "explanation": "Ils doivent permettre la visualisation permanente de la capacité nominale disponible." }
+
+
+
 
 ],
 
@@ -87,10 +118,10 @@
   { "id": 35, "question_id": 9, "text": "Dix-sept tours avec clé adaptée", "is_correct": false },
   { "id": 36, "question_id": 9, "text": "Quinze tours avec clé adaptée", "is_correct": false },
 
-  { "id": 37, "question_id": 0, "text": "Raccordés à un réseau d’eau sous pression, capable de fournir le débit réglementaire pendant au moins 2 heures", "is_correct": true },
-  { "id": 38, "question_id": 0, "text": "Fournir une pression minimale de 1 bar et maximale de 16 bars", "is_correct": true },
-  { "id": 39, "question_id": 0, "text": "Être incongelables : colonne d’arrivée d’eau située à 1 mètre minimum sous terre", "is_correct": true },
-  { "id": 40, "question_id": 0, "text": "Visibles et signalés par un marquage horizontal et vertical", "is_correct": true },
+  { "id": 37, "question_id": 10, "text": "Raccordés à un réseau d’eau sous pression, capable de fournir le débit réglementaire pendant au moins 2 heures", "is_correct": true },
+  { "id": 38, "question_id": 10, "text": "Fournir une pression minimale de 1 bar et maximale de 16 bars", "is_correct": true },
+  { "id": 39, "question_id": 10, "text": "Être incongelables : colonne d’arrivée d’eau située à 1 mètre minimum sous terre", "is_correct": true },
+  { "id": 40, "question_id": 10, "text": "Visibles et signalés par un marquage horizontal et vertical", "is_correct": true },
 
   { "id": 41, "question_id": 11, "text": "1000 litres/min", "is_correct": true },
   { "id": 42, "question_id": 11, "text": "800 litres/min", "is_correct": false },
@@ -113,7 +144,7 @@
   { "id": 56, "question_id": 14, "text": "Plaque jaune caractères noirs", "is_correct": false },
 
   { "id": 57, "question_id": 15, "text": "Autorisé selon horaire municipal", "is_correct": false },
-  { "id": 58, "question_id": 15, "text": "Interdit par le code routier", "is_correct": true },
+  { "id": 58, "question_id": 15, "text": "Interdit par le code de la route", "is_correct": true },
   { "id": 59, "question_id": 15, "text": "Toléré pour livraisons urgentes", "is_correct": false },
   { "id": 60, "question_id": 15, "text": "Soumis à arrêté préfectoral", "is_correct": false },
 
@@ -140,7 +171,161 @@
   { "id": 77, "question_id": 20, "text": "Non cette dimension n’existe", "is_correct": true },
   { "id": 78, "question_id": 20, "text": "Oui pour anciens réseaux urbains", "is_correct": false },
   { "id": 79, "question_id": 20, "text": "Oui pour réseaux industriels spéciaux", "is_correct": false },
-  { "id": 80, "question_id": 20, "text": "Non mais tolérance exceptionnelle locale", "is_correct": false }
+  { "id": 80, "question_id": 20, "text": "Non mais tolérance exceptionnelle locale", "is_correct": false },
+
+  { "id": 81, "question_id": 21, "text": "Plusieurs sens d’écoulement de l’eau", "is_correct": true },
+  { "id": 82, "question_id": 21, "text": "Un seul sens d’écoulement de l’eau", "is_correct": false },
+  { "id": 83, "question_id": 21, "text": "Écoulement intermittent limité par vannes fermées", "is_correct": false },
+  { "id": 84, "question_id": 21, "text": "Alimentation temporaire uniquement par réservoirs locaux", "is_correct": false },
+
+  { "id": 85, "question_id": 22, "text": "Surface adaptée et résistante pour la mise en station", "is_correct": true },
+  { "id": 86, "question_id": 22, "text": "Pente de 2 % à 7 % pour l’écoulement des eaux", "is_correct": true },
+  { "id": 87, "question_id": 22, "text": "Voie d’accès sans manœuvre pour la mise en station", "is_correct": true },
+  { "id": 88, "question_id": 22, "text": "Dispositif fixe de calage des engins présent", "is_correct": true },
+  { "id": 89, "question_id": 22, "text": "Disposer d’une hauteur cohérente", "is_correct": true },
+
+  { "id": 90, "question_id": 23, "text": "Travailler sur des sols mouvants en aspirant verticalement", "is_correct": true },
+  { "id": 91, "question_id": 23, "text": "Augmenter artificiellement la pression d’aspiration", "is_correct": false },
+  { "id": 92, "question_id": 23, "text": "Remplacer toute aire d’aspiration existante", "is_correct": false },
+  { "id": 93, "question_id": 23, "text": "Supprimer le besoin de crépine à l’aspiration verticale", "is_correct": false },
+
+  { "id": 94, "question_id": 24, "text": "Éviter le col de cygne des aspiraux", "is_correct": true },
+  { "id": 95, "question_id": 24, "text": "Augmenter le débit nominal de la pompe", "is_correct": false },
+  { "id": 96, "question_id": 24, "text": "Réchauffer l’eau avant la mise en aspiration", "is_correct": false },
+  { "id": 97, "question_id": 24, "text": "Remplacer la crépine en toute circonstance", "is_correct": false },
+
+  { "id": 98, "question_id": 25, "text": "Positionner la prise accessible au plus près de la rive", "is_correct": true },
+  { "id": 99, "question_id": 25, "text": "Augmenter la pression disponible en aspiration", "is_correct": false },
+  { "id": 100, "question_id": 25, "text": "Supprimer la nécessité d’une aire dédiée", "is_correct": false },
+  { "id": 101, "question_id": 25, "text": "Remplacer les prises d’eau existantes locales", "is_correct": false },
+
+  { "id": 102, "question_id": 26, "text": "Crépine sans clapet 0,5 m au-dessus du fond", "is_correct": true },
+  { "id": 103, "question_id": 26, "text": "Crépine avec clapet posée sur le fond", "is_correct": false },
+  { "id": 104, "question_id": 26, "text": "Prise directe sans crépine en eau profonde", "is_correct": false },
+  { "id": 105, "question_id": 26, "text": "Crépine flottante à la surface uniquement", "is_correct": false },
+
+  { "id": 106, "question_id": 27, "text": "À 0,3 m sous le niveau le plus bas", "is_correct": true },
+  { "id": 107, "question_id": 27, "text": "Sur le fond pour meilleure stabilité", "is_correct": false },
+  { "id": 108, "question_id": 27, "text": "À 0,5 m d’eau sous le niveau le plus bas", "is_correct": false },
+  { "id": 109, "question_id": 27, "text": "Au-dessus du niveau d’eau et toujours visible", "is_correct": false },
+
+  { "id": 110, "question_id": 28, "text": "25 × 30 cm minimum", "is_correct": false },
+  { "id": 111, "question_id": 28, "text": "35 × 40 cm minimum", "is_correct": true },
+  { "id": 112, "question_id": 28, "text": "45 × 50 cm minimum", "is_correct": false },
+  { "id": 113, "question_id": 28, "text": "60 × 60 cm minimum", "is_correct": false },
+
+  { "id": 114, "question_id": 29, "text": "½ raccord symétrique entre 0,5 m et 0,8 m au-dessus de l’aire", "is_correct": true },
+  { "id": 115, "question_id": 29, "text": "Canalisation rigide ou semi-rigide", "is_correct": true },
+  { "id": 116, "question_id": 29, "text": "Crépine avec clapet posée sur le fond", "is_correct": false },
+  { "id": 117, "question_id": 29, "text": "Crépine sans clapet à 0,5 m du fond et 0,3 m sous niveau bas", "is_correct": true },
+
+  { "id": 118, "question_id": 30, "text": "Rouge sur l’ensemble", "is_correct": false },
+  { "id": 119, "question_id": 30, "text": "Jaune sur au moins la moitié", "is_correct": false },
+  { "id": 120, "question_id": 30, "text": "Bleu sur l’ensemble", "is_correct": true },
+  { "id": 121, "question_id": 30, "text": "Vert avec bande blanche", "is_correct": false },
+
+  { "id": 122, "question_id": 31, "text": "Une sortie 100 mm et deux sorties 65 mm", "is_correct": true },
+  { "id": 123, "question_id": 31, "text": "Deux sorties 100 mm et une sortie 65 mm", "is_correct": false },
+  { "id": 124, "question_id": 31, "text": "Une sortie 65 mm et deux sorties 40 mm", "is_correct": false },
+  { "id": 125, "question_id": 31, "text": "Trois sorties 65 mm identiques", "is_correct": false },
+
+  { "id": 126, "question_id": 32, "text": "Évite l’arrachement et le jaillissement", "is_correct": true },
+  { "id": 127, "question_id": 32, "text": "Supprime l’entretien périodique", "is_correct": false },
+  { "id": 128, "question_id": 32, "text": "Autorise l’immersion prolongée", "is_correct": false },
+  { "id": 129, "question_id": 32, "text": "Rend la colonne montante mobile", "is_correct": false },
+
+  { "id": 130, "question_id": 33, "text": "Perpendiculaire ou parallèle au point d’eau", "is_correct": true },
+  { "id": 131, "question_id": 33, "text": "Oblique obligatoire pour la sécurité", "is_correct": false },
+  { "id": 132, "question_id": 33, "text": "Toujours parallèle avec roues braquées", "is_correct": false },
+  { "id": 133, "question_id": 33, "text": "Toujours perpendiculaire sans exceptions", "is_correct": false },
+
+  { "id": 134, "question_id": 34, "text": "Une aire d’aspiration conforme", "is_correct": true },
+  { "id": 135, "question_id": 34, "text": "Un réservoir enterré obligatoire voisin", "is_correct": false },
+  { "id": 136, "question_id": 34, "text": "Une prise d’eau potable dédiée", "is_correct": false },
+  { "id": 137, "question_id": 34, "text": "Une vanne trois voies permanente", "is_correct": false },
+
+  { "id": 138, "question_id": 35, "text": "Prévoir une fosse de décantation entre le plan d’eau et puits", "is_correct": true },
+  { "id": 139, "question_id": 35, "text": "Ajouter un clapet en bout de la crépine fixe", "is_correct": false },
+  { "id": 140, "question_id": 35, "text": "Installer une vanne trois voies sur le ½ raccord", "is_correct": false },
+  { "id": 141, "question_id": 35, "text": "Colorer l’eau pour contrôle visuel à distance", "is_correct": false },
+
+  { "id": 142, "question_id": 36, "text": "Oui, comme points d’eau artificiels", "is_correct": true },
+  { "id": 143, "question_id": 36, "text": "Non, jamais reconnues comme PEI", "is_correct": false },
+  { "id": 144, "question_id": 36, "text": "Uniquement si eau potable chlorée", "is_correct": false },
+  { "id": 145, "question_id": 36, "text": "Oui, mais classées points naturels", "is_correct": false },
+
+  { "id": 146, "question_id": 37, "text": "Dispositifs anti-chute prévus", "is_correct": true },
+  { "id": 147, "question_id": 37, "text": "Corde à nœuds ou échelle latérale", "is_correct": true },
+  { "id": 148, "question_id": 37, "text": "Au moins un accès praticable pour engins", "is_correct": true },
+  { "id": 149, "question_id": 37, "text": "Couvercle scellé hermétique permanent", "is_correct": false },
+
+  { "id": 150, "question_id": 38, "text": "Hygiène et salubrité améliorées", "is_correct": true },
+  { "id": 151, "question_id": 38, "text": "Réduction des accidents", "is_correct": true },
+  { "id": 152, "question_id": 38, "text": "Moins d’inconvénients gel/évaporation", "is_correct": true },
+  { "id": 153, "question_id": 38, "text": "Intérêt esthétique renforcé", "is_correct": true },
+
+  { "id": 154, "question_id": 39, "text": "120 m³ disponibles pendant 2 heures", "is_correct": true },
+  { "id": 155, "question_id": 39, "text": "60 m³ disponibles pendant 1 heure", "is_correct": false },
+  { "id": 156, "question_id": 39, "text": "180 m³ disponibles pendant 3 heures", "is_correct": false },
+  { "id": 157, "question_id": 39, "text": "90 m³ disponibles pendant 2 heures", "is_correct": false },
+
+  { "id": 158, "question_id": 40, "text": "Alimentation minimum de 80 mm et 6 L/s à gueule bée", "is_correct": true },
+  { "id": 159, "question_id": 40, "text": "Capacité du puisard 2 m³ minimum", "is_correct": true },
+  { "id": 160, "question_id": 40, "text": "Installation obligatoire sur tous sites", "is_correct": false },
+  { "id": 161, "question_id": 40, "text": "Alimentation minimum de 80 mm et 10 L/s à gueule bée", "is_correct": false },
+
+  { "id": 162, "question_id": 41, "text": "Permettre l’entrée d’air en partie haute", "is_correct": true },
+  { "id": 163, "question_id": 41, "text": "Augmenter la pression dans la conduite", "is_correct": false },
+  { "id": 164, "question_id": 41, "text": "Empêcher l’aspiration de fond en continu", "is_correct": false },
+  { "id": 165, "question_id": 41, "text": "Remplacer la crépine d’aspiration", "is_correct": false },
+
+  { "id": 166, "question_id": 42, "text": "Posée sur socle béton ou lit de sable", "is_correct": true },
+  { "id": 167, "question_id": 42, "text": "Dotée d’un poteau ou d’un ½ raccord 100 mm protégé du gel", "is_correct": true },
+  { "id": 168, "question_id": 42, "text": "Remplie exclusivement d’eau potable chlorée", "is_correct": false },
+  { "id": 169, "question_id": 42, "text": "Réserve abritée des feuilles, animaux, algues", "is_correct": true },
+
+  { "id": 170, "question_id": 43, "text": "Motopompe flottante", "is_correct": true },
+  { "id": 171, "question_id": 43, "text": "Poteau relais", "is_correct": false },
+  { "id": 172, "question_id": 43, "text": "Division d’attaque 65/2×40", "is_correct": false },
+  { "id": 173, "question_id": 43, "text": "Colonne sèche", "is_correct": false },
+
+  { "id": 174, "question_id": 44, "text": "Généralement non considérées comme PEI", "is_correct": true },
+  { "id": 175, "question_id": 44, "text": "Toujours considérées comme PEI", "is_correct": false },
+  { "id": 176, "question_id": 44, "text": "PEI si gonflables et couvertes", "is_correct": false },
+  { "id": 177, "question_id": 44, "text": "Acceptées uniquement l’été", "is_correct": false },
+
+  { "id": 178, "question_id": 45, "text": "Mobilisables comme prises d’eau selon conditions locales", "is_correct": true },
+  { "id": 179, "question_id": 45, "text": "Interdits en toutes circonstances", "is_correct": false },
+  { "id": 180, "question_id": 45, "text": "Autorisés uniquement si eau potable", "is_correct": false },
+  { "id": 181, "question_id": 45, "text": "Utilisables exclusivement de nuit", "is_correct": false },
+
+  { "id": 182, "question_id": 46, "text": "S’assurer du raccordement correct", "is_correct": true },
+  { "id": 183, "question_id": 46, "text": "Ouvrir progressivement (sens inverse des aiguilles d’une montre)", "is_correct": true },
+  { "id": 184, "question_id": 46, "text": "Limiter la surpression dans la pompe de l’engin", "is_correct": true },
+  { "id": 185, "question_id": 46, "text": "Ouvrir brusquement pour ventiler la canalisation", "is_correct": false },
+
+  { "id": 186, "question_id": 47, "text": "Deux sorties 100 mm et une sortie 65 mm", "is_correct": true },
+  { "id": 187, "question_id": 47, "text": "Une sortie 100 mm et deux sorties 65 mm", "is_correct": false },
+  { "id": 188, "question_id": 47, "text": "Trois sorties 65 mm identiques", "is_correct": false },
+  { "id": 189, "question_id": 47, "text": "Deux sorties 100 mm et deux sorties 65 mm", "is_correct": false },
+
+  { "id": 190, "question_id": 48, "text": "Une sortie 65 mm et éventuellement deux sorties 40 mm", "is_correct": true },
+  { "id": 191, "question_id": 48, "text": "Une sortie 100 mm et deux sorties 65 mm", "is_correct": false },
+  { "id": 192, "question_id": 48, "text": "Deux sorties 100 mm et une sortie 65 mm", "is_correct": false },
+  { "id": 193, "question_id": 48, "text": "Trois sorties 40 mm identiques", "is_correct": false },
+
+  { "id": 194, "question_id": 49, "text": "Eaux de pluie (collecte des toitures)", "is_correct": true },
+  { "id": 195, "question_id": 49, "text": "Collecte des eaux au sol avec vanne de barrage du collecteur", "is_correct": true },
+  { "id": 196, "question_id": 49, "text": "Réseau d’eau ne fournissant pas le débit pour un PI", "is_correct": true },
+  { "id": 197, "question_id": 49, "text": "Eau potable obligatoire pour un usage incendie", "is_correct": false },
+
+  { "id": 198, "question_id": 50, "text": "Visualisation permanente de la capacité nominale", "is_correct": true },
+  { "id": 199, "question_id": 50, "text": "Indication de la vitesse du vent", "is_correct": false },
+  { "id": 200, "question_id": 50, "text": "Affichage automatique du niveau toutes les heures", "is_correct": false },
+  { "id": 201, "question_id": 50, "text": "Numéro d’inventaire uniquement", "is_correct": false }
+
+
+
 ]
 
 
