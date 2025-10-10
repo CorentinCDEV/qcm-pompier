@@ -1,44 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Référentiels - QCM Pompier</title>
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="icon" type="image/png" href="assets/logo.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
-  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>QCM pompier — Thèmes, GTO & chapitres</title>
+  <meta name="theme-color" content="#b22222">
+  <meta name="description" content="Catalogue des thèmes, GTO et chapitres pour s'entraîner aux QCM sapeurs-pompiers.">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <script type="module" src="assets/js/main.js"></script>
 </head>
-<body data-page="themes">
+<body>
   <header>
-    <a href="index.html" class="brand">
-      <img src="assets/logo.png" alt="QCM Pompier" class="logo">
-    </a>
-    <nav>
-      <div class="burger" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="themes.html">Thèmes</a></li>
-        <li><a href="referentiels.html">Référentiels</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav-links mobile" id="mobileMenu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="themes.html">Thèmes</a></li>
-        <li><a href="referentiels.html">Référentiels</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Accueil">
+        <img src="assets/logo.svg" alt="Logo" class="logo"/>
+      </a>
+      <nav class="menu">
+        <a href="index.html#accueil">Accueil</a>
+        <a href="themes.html" aria-current="page">Thèmes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="burger" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Ouvrir le menu"><span></span></button>
+    </div>
+    <div id="mobile-drawer" class="drawer container" hidden>
+      <a href="index.html#accueil">Accueil</a>
+      <a href="themes.html" aria-current="page">Thèmes</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </header>
 
-  <main class="container" id="content"></main>
+  <main>
+    <section class="container" style="padding-top:28px">
+      <h1>Thèmes, GTO & chapitres</h1>
+      <p class="muted">Choisissez un chapitre pour lancer un QCM (20) ou une épreuve type concours.</p>
+      <div id="catalog" class="grid" style="gap:18px"></div>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 QCM Pompier - Tous droits réservés</p>
+    <div class="container foot">
+      <small>© 2025 QCM pompier — Entraînement non officiel.</small>
+    </div>
   </footer>
-
-  <script src="assets/app.js"></script>
 </body>
 </html>

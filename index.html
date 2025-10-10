@@ -1,60 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QCM Pompier</title>
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="icon" type="image/png" href="assets/logo.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
-  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>QCM pompier — Accueil</title>
+  <meta name="theme-color" content="#b22222">
+  <meta name="description" content="Entraînez-vous aux QCM sapeurs-pompiers : thèmes, GTO, chapitres, mode concours (70 questions, 60 min). Gratuit et responsive.">
+  <meta property="og:title" content="QCM pompier – Entraînement sapeurs-pompiers">
+  <meta property="og:description" content="Mode QCM ou concours, par thèmes/GTO/chapitres. Lancez 20 aléatoires ou une épreuve type concours.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/icons/og-image.png">
+  <link rel="canonical" href="https://example.com/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "QCM pompier",
+    "url": "https://example.com/"
+  }
+  </script>
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <script type="module" src="assets/js/main.js"></script>
 </head>
-<body data-page="home">
-  <!-- Header -->
-<header>
-    <a href="index.html" class="brand">
-      <img src="assets/logo.png" alt="QCM Pompier" class="logo">
-    </a>
-    <nav>
-      <div class="burger" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="themes.html">Thèmes</a></li>
-        <li><a href="referentiels.html">Référentiels</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav-links mobile" id="mobileMenu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="themes.html">Thèmes</a></li>
-        <li><a href="referentiels.html">Référentiels</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Accueil">
+        <img src="assets/logo.png" alt="Logo" class="logo"/>
+      </a>
+      <nav class="menu">
+        <a href="index.html#accueil" data-link>Accueil</a>
+        <a href="themes.html" data-link>Thèmes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="burger" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Ouvrir le menu"><span></span></button>
+    </div>
+    <div id="mobile-drawer" class="drawer container" hidden>
+      <a href="index.html#accueil" data-link>Accueil</a>
+      <a href="themes.html" data-link>Thèmes</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </header>
 
-  <!-- Intro -->
-  <section class="intro">
-    <h2>Préparez vos QCM facilement</h2>
-    <p>
-      <span>Ce site a pour but de proposer des QCM pour s’entraîner et réviser.</span>
-      <span>⚠️ En aucun cas la réalisation de ces QCM ne permet d’obtenir une formation, certification ou concours.</span>
-      <span>Toutes les questions sont issues des référentiels nationaux.</span>
-      <span>Une idée originale de Corentin CHAUFFERT.</span>
-    </p>
-    <a href="themes.html" class="cta-btn">Commencer un QCM</a>
-  </section>
+  <main>
+    <section id="accueil-sec" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Entraînez-vous efficacement en effectuant des QCM.</h1>
+          <div class="lead">
+            <p>Tout est structuré par thèmes et chapitres.</p>
+            <p>Interface simple, lisible et 100% responsive.</p>
+            <p>Corrections immédiates et suivi de score local.</p>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="#qcm" data-link data-start-random>Lancer 20 questions aléatoires</a>
+            <a class="btn" href="#concours" data-link data-start-concours>Mode concours</a>
+          </div>
+          <div class="disclaimer" role="note">
+            <strong>Important :</strong> Entraînement uniquement, sans valeur officielle.
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section id="themes-sec">
+      <div class="container">
+        <h2>Thèmes</h2>
+        <div class="theme-grid" style="margin-top:12px">
+          <a class="theme-card" href="index.html#accueil" data-theme="Incendie">
+            <h3>🔥 Incendie</h3>
+            <div class="muted">Phénomènes thermiques, établissements…</div>
+          </a>
+          <a class="theme-card" href="index.html#accueil" data-theme="Secours à personne">
+            <h3>⛑️ Secours à personne</h3>
+            <div class="muted">Bilans, gestes, conduites à tenir.</div>
+          </a>
+          <a class="theme-card" href="index.html#accueil" data-theme="Divers">
+            <h3>🧭 Divers opérations</h3>
+            <div class="muted">LOT, signalisation, transmissions…</div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <main class="container" id="content"></main>
-  <!-- Footer -->
+    <section id="qcm-sec" class="container" style="display:none">
+      <div class="layout">
+        <aside>
+          <div class="card">
+            <div class="row" style="justify-content:space-between"><strong>Progression</strong></div>
+            <div class="progress"><div id="bar" class="bar" style="width:0%"></div></div>
+            <div class="row" style="margin-top:10px">
+              <span class="chip" id="chipIndex">1 / 20</span>
+              <span class="chip" id="chipScore">Score: 0</span>
+              <span class="chip" id="chipTheme">Thème: —</span>
+              <span class="chip" id="chipCourse">GTO: —</span>
+              <span class="chip" id="chipChapter">Chapitre: —</span>
+            </div>
+          </div>
+        </aside>
+        <section id="qcm" class="card qcard">
+          <h2 id="question">Question</h2>
+          <div id="choices" class="choices" role="group" aria-label="Choix de réponse"></div>
+          <div class="meta">
+            <div class="row">
+              <button id="validate" class="btn btn-primary">Valider</button>
+              <button id="next" class="btn" disabled>Question suivante</button>
+            </div>
+          </div>
+          <div id="feedback" class="feedback">
+            <div class="row">
+              <span id="fb-icon" class="icon" aria-hidden="true"></span>
+              <strong id="fb-title">Votre réponse</strong>
+            </div>
+            <div class="answers" id="fb-answers" style="margin-top:6px"></div>
+          </div>
+          <div id="result" class="result">
+            <div class="row" style="justify-content:space-between;align-items:center">
+              <strong id="res-title">Résultat</strong>
+              <div class="links">
+                <a class="btn" href="#qcm" data-link data-start-random>Rejouer 20 aléatoires</a>
+                <a class="btn" href="#concours" data-link data-start-concours>Mode concours</a>
+              </div>
+            </div>
+            <div class="muted" id="res-text" style="margin-top:6px"></div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="concours-sec" class="container" style="display:none">
+      <div class="card">
+        <div class="row" style="justify-content:space-between;align-items:center">
+          <h2 id="cc-title" style="margin:0">Mode concours — 70 questions</h2>
+          <div class="row">
+            <span class="chip" id="cc-timer">01:00:00</span>
+            <span class="chip" id="cc-chipCount">0 / 70 répondues</span>
+          </div>
+        </div>
+        <div class="muted" style="margin:.4rem 0 1rem">
+          Répondez directement dans la liste. Chrono global descendant. Validez à la fin pour obtenir votre note.
+        </div>
+        <div id="concours-list" class="concours-list"></div>
+        <div class="row" style="justify-content:flex-end;margin-top:12px">
+          <button class="btn btn-primary" id="cc-validate">Valider l’épreuve</button>
+        </div>
+        <div id="cc-result" class="result" style="position:static;margin-top:12px">
+          <div class="row" style="justify-content:space-between;align-items:center">
+            <strong>Résultat</strong>
+            <div class="links"></div>
+          </div>
+          <div class="muted" id="cc-res-text" style="margin-top:6px"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer>
-    <p>&copy; 2025 QCM Pompier - Tous droits réservés</p>
-    <p><a href="#">Mentions légales</a></p>
+    <div class="container foot">
+      <small>© 2025 QCM pompier — Entraînement non officiel.</small>
+    </div>
   </footer>
 
-
-  <script src="assets/app.js"></script>
+  <!-- Modal sélecteur Thème → GTO → Chapitre -->
+  <div id="selector-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="selector-title">
+    <div class="dialog">
+      <div class="row" style="justify-content:space-between;align-items:center">
+        <h3 id="selector-title">Configurer votre entraînement</h3>
+        <button class="btn close" id="sel-close">Fermer</button>
+      </div>
+      <div class="muted" id="sel-theme" style="margin-top:2px"></div>
+      <div class="grid" style="margin-top:10px">
+        <div><label>GTO (cours)<br><select id="sel-course"></select></label></div>
+        <div><label>Chapitre<br><select id="sel-chapter"></select></label></div>
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary" id="sel-start-qcm">Lancer QCM (20)</button>
+        <button class="btn" id="sel-start-concours">Mode concours</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+

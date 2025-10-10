@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>QCM pompier — Contact</title>
+  <meta name="theme-color" content="#b22222">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Accueil">
+        <img src="assets/logo.svg" alt="Logo" class="logo"/>
+      </a>
+      <nav class="menu">
+        <a href="index.html#accueil">Accueil</a>
+        <a href="index.html#themes">Thèmes</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <button class="burger" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Ouvrir le menu"><span></span></button>
+    </div>
+    <div id="mobile-drawer" class="drawer container" hidden>
+      <a href="index.html#accueil">Accueil</a>
+      <a href="index.html#themes">Thèmes</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" style="padding-top:28px">
+      <h1>Contact</h1>
+      <div class="card contact-card">
+        <form id="contact-form" class="pretty-form">
+          <div class="grid cols-2">
+            <div class="field">
+              <label>Nom</label>
+              <input name="name" required placeholder="Votre nom" />
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input name="email" type="email" required placeholder="vous@exemple.fr" />
+            </div>
+          </div>
+          <div class="grid cols-2">
+            <div class="field">
+              <label>Thème</label>
+              <input name="topic" placeholder="Ex: Incendie" />
+            </div>
+            <div class="field">
+              <label>Chapitre / cours</label>
+              <input name="chapter" placeholder="Ex: Chapitre 1 — Connaissance du risque" />
+            </div>
+          </div>
+          <div class="field">
+            <label>Message</label>
+            <textarea name="message" required rows="6" placeholder="Décrivez l’erreur constatée, la question concernée..."></textarea>
+          </div>
+
+          <div class="row" style="justify-content:space-between;align-items:center;margin-top:8px">
+            <div class="muted small">Vos informations ne sont pas stockées côté client.</div>
+            <div class="row">
+              <button class="btn" type="reset">Effacer</button>
+              <button class="btn btn-primary" type="submit">Envoyer</button>
+            </div>
+          </div>
+          <div id="form-status" class="status" aria-live="polite"></div>
+        </form>
+      </div>
+      <p class="muted" style="margin-top:8px">
+        ⚙️ Remplacez <code>YOUR_EMAIL@domain.tld</code> dans <code>assets/app.js</code> pour recevoir les messages.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <small>© 2025 QCM pompier — Entraînement non officiel.</small>
+    </div>
+  </footer>
+</body>
+</html>
