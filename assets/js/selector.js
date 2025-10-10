@@ -1,6 +1,5 @@
 // assets/js/selector.js
-import { loadTheme, loadAllThemes } from './data.js';
-import { startConcours } from './concours.js';
+import { loadTheme } from './data.js';
 import { startRandomSession } from './qcm.js';
 
 const selModal = document.getElementById('selector-modal');
@@ -9,7 +8,6 @@ const selTheme = document.getElementById('sel-theme');
 const selCourse = document.getElementById('sel-course');
 const selChapter = document.getElementById('sel-chapter');
 const selStartQcm = document.getElementById('sel-start-qcm');
-const selStartConcours = document.getElementById('sel-start-concours');
 
 export function initSelector(){
   if(!(selModal && selClose && selCourse && selChapter)) return;
@@ -22,7 +20,6 @@ export function initSelector(){
     });
   });
   selStartQcm?.addEventListener('click', startQcmFromSelector);
-  selStartConcours?.addEventListener('click', startConcoursFromSelector);
 }
 
 async function openSelector(themeKey){
@@ -48,13 +45,4 @@ async function startQcmFromSelector(){
   if(selChapter.value) filters.chapter = selChapter.value;
   selModal.style.display = 'none';
   await startRandomSession(filters);
-}
-
-async function startConcoursFromSelector(){
-  const theme = selModal.dataset.theme;
-  const filters = { theme };
-  if(selCourse.value) filters.course = selCourse.value;
-  if(selChapter.value) filters.chapter = selChapter.value;
-  selModal.style.display='none';
-  await startConcours(filters);
 }

@@ -4,7 +4,6 @@ import { loadAllThemes, getThemeBank } from './data.js';
 
 let QUESTIONS = [], idx = 0, score = 0;
 
-// element refs (resolved on demand)
 function refs(){
   return {
     elQuestion: document.getElementById('question'),
@@ -13,7 +12,6 @@ function refs(){
     elNext: document.getElementById('next'),
     elBar: document.getElementById('bar'),
     elChipIdx: document.getElementById('chipIndex'),
-    elChipScore: document.getElementById('chipScore'),
     elChipTheme: document.getElementById('chipTheme'),
     elChipCourse: document.getElementById('chipCourse'),
     elChipChapter: document.getElementById('chipChapter'),
@@ -28,7 +26,10 @@ function refs(){
 
 function getSelected(){
   const arr = [];
-  document.querySelectorAll('.choice.selected').forEach(c => arr.push(parseInt(c.dataset.index,10)));
+  document.querySelectorAll('.choice input:checked').forEach(inp => {
+    const i = parseInt(inp.closest('.choice').dataset.index, 10);
+    arr.push(i);
+  });
   return arr.sort((a,b)=>a-b);
 }
 
@@ -37,18 +38,33 @@ export function renderQuestion(){
   const q = QUESTIONS[idx];
   r.elQuestion.textContent = q?.text || '—';
   r.elChoices.innerHTML = '';
+
   (q.choices || []).forEach((label, i) => {
     const item = document.createElement('label');
     item.className = 'choice';
     item.dataset.index = i;
-    item.dataset.type = 'single';
-    item.innerHTML = `<input type="radio" name="choice"><span>${label}</span>`;
-    item.addEventListener('click', () => {
-      r.elChoices.querySelectorAll('.choice').forEach(c => c.classList.remove('selected'));
-      item.classList.add('selected');
+    item.dataset.type = 'multi'; // multi-choix
+
+    // --- construction DOM explicite (checkbox + span) ---
+    const input = document.createElement('input');
+    input.type = 'checkbox';
+    input.name = `choice_${idx}_${i}`;
+
+    const span = document.createElement('span');
+    span.textContent = label;
+
+    // la classe .selected suit l'état checked
+    input.addEventListener('change', () => {
+      item.classList.toggle('selected', input.checked);
     });
+
+    item.appendChild(input);
+    item.appendChild(span);
+    // -----------------------------------------------------
+
     r.elChoices.appendChild(item);
   });
+
   r.elChipIdx.textContent = `${idx+1} / ${QUESTIONS.length}`;
   r.elBar.style.width = `${(idx)/QUESTIONS.length*100}%`;
   r.elChipTheme.textContent = `Thème: ${q.theme || '—'}`;
@@ -72,7 +88,6 @@ export async function startRandomSession(filters = {}){
   renderQuestion();
   const r = refs();
   r.elChipIdx.textContent = `1 / ${QUESTIONS.length}`;
-  r.elChipScore.textContent = `Score: 0`;
   if (location.hash !== '#qcm') location.hash = '#qcm';
 }
 
@@ -80,9 +95,32 @@ export function bindQCMControls(){
   const r = refs(); if(!r.elValidate || !r.elNext) return;
   r.elValidate.addEventListener('click', () => {
     const q = QUESTIONS[idx]; const bank = getThemeBank();
-    const sel = getSelected(); if(!sel.length){ alert('Sélectionnez une réponse.'); return; }
+    const sel = getSelected();
+
+    // si aucune réponse → compter comme FAUX (pas d’alerte)
+    if(!sel.length){
+      const ans = (bank[q.theme]?.answers?.[q.id] || {});
+      r.elFbIcon.className = 'icon ko';
+      r.elFeedback.className = 'feedback ko';
+      r.elFbTitle.textContent = 'Mauvaise réponse';
+      r.elFbAnswers.innerHTML='';
+      (q.choices || []).forEach((label, i) => {
+        const p = document.createElement('div');
+        const isOk = (ans.correct || []).includes(i);
+        p.className = 'ans ' + (isOk ? 'ok' : '');
+        p.innerHTML = `${isOk ? '✅' : '•'} ${label}`;
+        r.elFbAnswers.appendChild(p);
+      });
+      r.elFeedback.style.display = 'block';
+      r.elValidate.disabled = true;
+      r.elNext.disabled = false;
+      return;
+    }
+
+    // correction multi-choix (égalité d’ensembles exacte)
     const ans = (bank[q.theme]?.answers?.[q.id] || {});
-    const ok = arraysEqual(sel, (ans.correct || [])); if(ok) score++;
+    const ok = arraysEqual(sel, (ans.correct || []));
+    if(ok) score++;
 
     r.elFbIcon.className = 'icon ' + (ok ? 'ok' : 'ko');
     r.elFeedback.className = 'feedback ' + (ok ? 'ok' : 'ko');
@@ -97,7 +135,6 @@ export function bindQCMControls(){
       r.elFbAnswers.appendChild(p);
     });
     r.elFeedback.style.display = 'block';
-    r.elChipScore.textContent = `Score: ${score}`;
     r.elValidate.disabled = true;
     r.elNext.disabled = false;
     if(idx === QUESTIONS.length-1){ r.elBar.style.width = '100%'; }
@@ -117,4 +154,4 @@ export function bindQCMControls(){
   });
 }
 
-export function hasQuestions(){ try { return (typeof QUESTIONS !== 'undefined') && Array.isArray(QUESTIONS) && QUESTIONS.length > 0; } catch(e){ return false; } }
+export function hasQuestions(){ try { return Array.isArray(QUESTIONS) && QUESTIONS.length > 0; } catch(e){ return false; } }
